@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Api", "Market.Api\Market.Api.csproj", "{C6DCF00B-9647-4DCC-8D5C-A7062C26107E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Api", "Market.Api\Market.Api.csproj", "{C6DCF00B-9647-4DCC-8D5C-A7062C26107E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Business", "Market.Business\Market.Business.csproj", "{DF377144-E046-4A73-B98D-3F443B0E6146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Business", "Market.Business\Market.Business.csproj", "{DF377144-E046-4A73-B98D-3F443B0E6146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Core", "Market.Core\Market.Core.csproj", "{E2BC6333-ACD7-4C15-BFF5-78006E3263DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Core", "Market.Core\Market.Core.csproj", "{E2BC6333-ACD7-4C15-BFF5-78006E3263DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Data", "Market.Data\Market.Data.csproj", "{DA7A46B7-8B7E-43D0-A5A1-068337FD01A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Data", "Market.Data\Market.Data.csproj", "{DA7A46B7-8B7E-43D0-A5A1-068337FD01A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market.Entity", "Market.Entity\Market.Entity.csproj", "{B2014B2D-470D-477C-9590-696B1D1DFD9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Market.Entity", "Market.Entity\Market.Entity.csproj", "{B2014B2D-470D-477C-9590-696B1D1DFD9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

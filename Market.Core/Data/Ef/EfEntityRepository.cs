@@ -1,13 +1,7 @@
 ﻿using Market.Core.Abstract;
 using Market.Core.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Market.Core.Data.Ef
 {
@@ -28,6 +22,8 @@ namespace Market.Core.Data.Ef
             }
         }
 
+      
+
         public void Delete(TEntity entity)
         {
             using (var context = new TContext())
@@ -38,6 +34,8 @@ namespace Market.Core.Data.Ef
             }
         }
 
+       
+
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             using (var context = new TContext())
@@ -45,6 +43,13 @@ namespace Market.Core.Data.Ef
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
+
+        public IQueryable<TEntity> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+      
 
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
@@ -64,5 +69,7 @@ namespace Market.Core.Data.Ef
                 return addedEntity.Entity;
             }
         }
+
+     
     }
 }

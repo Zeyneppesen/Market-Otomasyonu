@@ -1,4 +1,4 @@
-namespace Market.Api
+namespace WebApplication1
 {
     public class WeatherForecast
     {

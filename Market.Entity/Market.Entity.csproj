@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\DTO\" />
     <Folder Include="Concrete\Validators\" />
   </ItemGroup>
 
@@ -20,6 +19,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Market.Core\Market.Core.csproj" />
   </ItemGroup>
 
 </Project>

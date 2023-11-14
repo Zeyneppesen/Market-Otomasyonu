@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market.Core.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace Market.Entity.Concrete.Model
 {
     [Table("Products")]
-    public class Product
+    public class Product:IEntity
     {
         [Column("Id")]
         public long Id { get; set; }

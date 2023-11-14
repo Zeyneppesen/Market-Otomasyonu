@@ -6,8 +6,8 @@ namespace Market.Api.Extensions
     public static class SwaggerServiceExtensions
     {
         private static string GesApiVersion = "v1";
-        private static string GesApiName = "Market API";
-        private static string GesApiDesc = "Welcome to Market API";
+        private static string GesApiName = "Agriculture API";
+        private static string GesApiDesc = "Welcome to Agriculture API";
 
 
         public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
