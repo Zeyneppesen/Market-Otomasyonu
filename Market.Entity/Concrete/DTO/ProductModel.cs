@@ -14,6 +14,10 @@ namespace Market.Entity.Concrete.DTO
         public int UnitPrice { get; set; }
         public int Stock { get; set; }
         public string Detail { get; set; }
+        public DateTime InDate { get; set; }
+        public DateTime OutDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
+
 
     }
 }

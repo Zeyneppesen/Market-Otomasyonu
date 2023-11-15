@@ -1,13 +1,7 @@
 ﻿using Market.Business.Abstract;
-using Market.Business.Abstract;
 using Market.Data.Abstract;
-using Market.Data.Concrete.Ef;
 using Market.Entity.Concrete.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Market.Business.Concrete
 {
@@ -34,7 +28,15 @@ namespace Market.Business.Concrete
 
                         var model = new ProductModel();
                         model.Id = productModule.Id;
+                        model.CategoryId = productModule.CategoryId;
                         model.Name = productModule.Name;
+                        model.UnitPrice = productModule.UnitPrice;
+                        model.Stock = productModule.Stok;
+                        model.Detail = productModule.Detail;
+                        model.InDate = productModule.InDate;
+                        model.OutDate = productModule.OutDate;
+                        model.ExpirationDate = productModule.ExpirationDate;
+
                         productModuless.Add(model);
                     }
                     response.Products = productModuless;

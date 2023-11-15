@@ -1,5 +1,5 @@
-﻿using Market.Business.Concrete;
-using Market.Business.Abstract;
+﻿using Market.Business.Abstract;
+using Market.Business.Concrete;
 using Market.Data.Abstract;
 using Market.Data.Concrete.Ef;
 
@@ -13,7 +13,7 @@ namespace Market.Api.Extensions
             // .AddFluentValidation
 
             //Services
-            services.AddScoped<IProductService, ProductService>();
+             services.AddScoped<IProductService, ProductService>();
             //services.AddScoped<IUserService, UserService>();
             //services.AddScoped<IDataService, DataService>();
             //services.AddScoped<IAreasService, AreasService>();
