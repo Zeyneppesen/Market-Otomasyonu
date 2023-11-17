@@ -1,6 +1,9 @@
 ﻿using Market.Business.Abstract;
 using Market.Data.Abstract;
 using Market.Entity.Concrete.DTO;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
 
 
 namespace Market.Business.Concrete
@@ -8,12 +11,15 @@ namespace Market.Business.Concrete
     public class ProductService:IProductService
     {
         private readonly IProductRepository _productRepository;
-        public ProductService(IProductRepository productRepository)
+        private readonly ILogger<ProductService> _logger;
+
+        public ProductService(IProductRepository productRepository,ILogger< ProductService >logger)
         {
             _productRepository = productRepository;
+            _logger = logger;
         }
 
-        public GetProductResponse GetProduct(GetProductRequest request)
+        public GetProductResponse GetProduct([FromQuery] GetProductRequest request)
         {
             var response = new GetProductResponse();
             try
@@ -44,12 +50,19 @@ namespace Market.Business.Concrete
             
             
                 response.Code = "200";
-                response.Message = "Veriler getirildi.";
+                //response.Message = "Veriler getirildi.";
+                _logger.LogInformation("Veriler getirildi.");
+                string DosyaYolu = Environment.CurrentDirectory + @"\ERROR\Error.txt";
+                if (!File.Exists(DosyaYolu))
+                {
+                    File.Create(DosyaYolu);
+                }
                 return response;
             }
             catch (Exception e)
             {
-
+              
+                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage"+e.Message);
                 response.Errors.Add("Bir hata ile karşılaşıldı. " + e.Message);
                 response.Code = "400";
                 return response;
