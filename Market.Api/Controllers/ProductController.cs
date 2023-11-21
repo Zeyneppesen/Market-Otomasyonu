@@ -3,6 +3,7 @@ using Market.Entity.Concrete.DTO;
 using Market.Business.Abstract;
 using System.Net.Http;
 using Swashbuckle.AspNetCore.Annotations;
+using Market.Business.Concrete;
 
 
 namespace Market.Api.Controllers
@@ -20,17 +21,14 @@ namespace Market.Api.Controllers
         public ProductController(ILogger<ProductController> logger, IProductService productService, IHttpClientFactory httpClientFactory)
         {
             _logger = logger;
-            _productService = productService;
+            _productService = productService?? throw new ArgumentNullException(nameof(productService));
             _httpClientFactory = httpClientFactory;
         }
 
-        //public ProductController(IProductService productService)
-        //{
-            
-        //    _productService = productService;
-        //}
 
-        [SwaggerOperation(Summary = "Tarla Modülü listeleme ", Description = "<h2> Tarla Id </h2> Tarla id'si bilgisi girilerek modül getirme.")]
+
+
+        [SwaggerOperation(Summary = " listeleme ", Description = ".")]
 
         [HttpGet]
         [Route("GetProduct")]

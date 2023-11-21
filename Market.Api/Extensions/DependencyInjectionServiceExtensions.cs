@@ -14,30 +14,25 @@ namespace Market.Api.Extensions
         {
             //services.AddMvc();
             services.AddHttpContextAccessor();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, EfProductRepository>();
 
             //services.AddControllersWithViews();
-            // .AddFluentValidation
 
+            //Services
             var loggerConfiguration = new LoggerConfiguration()
-                   //.WriteTo.Console() // Opsiyonel: Konsola log yazmak için
-                   .WriteTo.File("logdosyasi.txt", rollingInterval: RollingInterval.Day, restrictedToMinimumLevel: LogEventLevel.Information); // Günlük bazında dosyaya log yazmak için
+               //.WriteTo.Console() // Opsiyonel: Konsola log yazmak için
+               .WriteTo.File("logdosyasi.txt", rollingInterval: RollingInterval.Day, restrictedToMinimumLevel: LogEventLevel.Information); // Günlük bazında dosyaya log yazmak için
 
             Log.Logger = loggerConfiguration.CreateLogger();
 
             services.AddLogging(builder =>
             {
+
                 builder.AddConsole(); // Logları konsola yazdır
+                builder.AddSerilog();
             });
-            //Services
-            services.AddScoped<IProductService, ProductService>();
-            
-           
-
-
-            //Repository
-            services.AddScoped<IProductRepository,EfProductRepository>();
-
-            AddDependency(services);
+            services.AddCors();
 
             return services;
         }
