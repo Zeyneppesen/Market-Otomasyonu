@@ -32,8 +32,4 @@
     <ProjectReference Include="..\Market.Business\Market.Business.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ERROR\" />
-  </ItemGroup>
-
 </Project>

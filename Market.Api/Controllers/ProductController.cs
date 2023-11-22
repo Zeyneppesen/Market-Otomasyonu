@@ -33,10 +33,8 @@ namespace Market.Api.Controllers
         [HttpGet]
         [Route("GetProduct")]
         public GetProductResponse GetProduct([FromQuery] GetProductRequest request)
-
-
         {
-
+            
             return _productService.GetProduct(request);
 
         }

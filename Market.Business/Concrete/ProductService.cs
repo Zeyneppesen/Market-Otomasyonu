@@ -50,7 +50,8 @@ namespace Market.Business.Concrete
             
             
                 response.Code = "200";
-                //response.Message = "Veriler getirildi.";
+            
+
                 _logger.LogInformation("Veriler getirildi.");
                 string DosyaYolu = Environment.CurrentDirectory + @"\ERROR\Error.txt";
                 if (!File.Exists(DosyaYolu))
