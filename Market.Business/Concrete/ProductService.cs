@@ -3,6 +3,7 @@ using Market.Data.Abstract;
 using Market.Entity.Concrete.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Serilog.Core;
 
 
 
@@ -21,9 +22,12 @@ namespace Market.Business.Concrete
 
         public GetProductResponse GetProduct([FromQuery] GetProductRequest request)
         {
+            
             var response = new GetProductResponse();
             try
             {
+              
+
                 var products = _productRepository.GetList(p => p.Id == request.UserId);
                 foreach (var product in products)
                 {
@@ -46,6 +50,7 @@ namespace Market.Business.Concrete
                         productModuless.Add(model);
                     }
                     response.Products = productModuless;
+               
                 }
             
             

@@ -25,11 +25,6 @@ namespace Market.Api.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-
-
-
-        [SwaggerOperation(Summary = " listeleme ", Description = ".")]
-
         [HttpGet]
         [Route("GetProduct")]
         public GetProductResponse GetProduct([FromQuery] GetProductRequest request)

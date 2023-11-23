@@ -14,15 +14,16 @@ Log.Logger=new LoggerConfiguration().MinimumLevel.Debug().WriteTo
     .File("LogFile\\log.txt",rollingInterval:RollingInterval.Day)
     .CreateLogger();
 
+
+builder.Logging.AddSerilog();
+
 builder.Services.AddControllers();
-
-
-
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.AddSingleton<ILogging, Logging>(ILogging);
+//builder.AddSingleton<ILogging, Logging>(ILogging);
+;
 builder.Services.AddDbContext<MarketDbContext>(options =>
 {
     options.UseSqlServer("Data Source = 'DESKTOP-R4ITLSH,1433\\MSSQLSERVER'; Initial Catalog =MarketDB;MultipleActiveResultSets=True; ");
