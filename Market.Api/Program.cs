@@ -10,12 +10,13 @@ using Market.Api.Error;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Log.Logger=new LoggerConfiguration().MinimumLevel.Debug().WriteTo
-    .File("LogFile\\log.txt",rollingInterval:RollingInterval.Day)
+Log.Logger=new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.File("LogFile\\log.txt",rollingInterval:RollingInterval.Day)
     .CreateLogger();
 
-
-builder.Logging.AddSerilog();
+builder.Host.UseSerilog();
+//builder.Logging.AddSerilog();
 
 builder.Services.AddControllers();
 

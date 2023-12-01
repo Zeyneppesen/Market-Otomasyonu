@@ -113,7 +113,7 @@ namespace Market.Api.Extensions
                             Id = "Bearer"
                         }
                     },
-                    Array.Empty<string>()
+                    System.Array.Empty<string>()
                 }
             });
                 });

@@ -14,6 +14,8 @@ namespace Market.Api.Extensions
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Market API", Version = "v1" });
+                //c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Market API", Version = "v1" });
+
             }
             ); 
 
@@ -30,7 +32,7 @@ namespace Market.Api.Extensions
             });
 
             services.AddCors();
-            // services.AddScoped<IProductService, ProductService>();
+         
             services.AddDependency();
             services.AddSwaggerDocumentation();
 
