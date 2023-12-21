@@ -8,7 +8,7 @@ namespace Market.Entity.Concrete.DTO
 {
     public class GetProductResponse : BaseApiResponse
     {
-        public List<ProductModel> Products { get; set; }
+        public List<ProductModal> Products { get; set; }
     }
     }
        

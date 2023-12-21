@@ -4,6 +4,8 @@ using Market.Business.Abstract;
 using System.Net.Http;
 using Swashbuckle.AspNetCore.Annotations;
 using Market.Business.Concrete;
+using Microsoft.EntityFrameworkCore;
+using Market.Entity.Concrete.Model;
 
 
 namespace Market.Api.Controllers
@@ -16,25 +18,20 @@ namespace Market.Api.Controllers
 
         private readonly IProductService _productService;
 
-        private readonly IHttpClientFactory _httpClientFactory;
-
-        public ProductController(ILogger<ProductController> logger, IProductService productService, IHttpClientFactory httpClientFactory)
+        public ProductController(ILogger<ProductController> logger, IProductService productService)
         {
             _logger = logger;
-            _productService = productService?? throw new ArgumentNullException(nameof(productService));
-            _httpClientFactory = httpClientFactory;
+            _productService = productService;
+
         }
 
         [HttpGet]
         [Route("GetProduct")]
-        public GetProductResponse GetProduct([FromQuery] GetProductRequest request)
+        public GetProductResponse GetProduct()
         {
-            
+            GetProductRequest request = new GetProductRequest();
             return _productService.GetProduct(request);
-
         }
-
-
 
     }
 }

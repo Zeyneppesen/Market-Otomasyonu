@@ -17,7 +17,7 @@ namespace Market.Api.Extensions
                 //c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Market API", Version = "v1" });
 
             }
-            ); 
+            );
 
             var loggerConfiguration = new LoggerConfiguration()
                 //.WriteTo.Console() // Opsiyonel: Konsola log yazmak için
@@ -32,7 +32,7 @@ namespace Market.Api.Extensions
             });
 
             services.AddCors();
-         
+
             services.AddDependency();
             services.AddSwaggerDocumentation();
 

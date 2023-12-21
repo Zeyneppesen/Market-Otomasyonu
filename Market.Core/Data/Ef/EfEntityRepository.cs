@@ -13,7 +13,6 @@ namespace Market.Core.Data.Ef
         {
             using (var context = new TContext())
 
-
             {
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
@@ -44,12 +43,6 @@ namespace Market.Core.Data.Ef
             }
         }
 
-        public IQueryable<TEntity> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-      
 
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {

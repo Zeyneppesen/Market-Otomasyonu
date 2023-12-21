@@ -19,7 +19,7 @@ namespace Market.Entity.Concrete.Model
         public string Name { get; set; }
         [Column("UnitPrice")]
         public int UnitPrice { get; set; }
-        [Column("Stok")]
+        [Column("Stock")]
         public int Stok { get; set; }
         [Column("Detail")]
         public string Detail { get; set; }

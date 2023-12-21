@@ -1,11 +1,13 @@
-﻿using Market.Entity.Concrete.DTO;
-using Microsoft.AspNetCore.Mvc;
+﻿
 
+
+
+using Market.Data;
 
 namespace Market.Business.Abstract
 {
     public interface IProductService
     {
-        GetProductResponse GetProduct([FromQuery] GetProductRequest request);
+        GetProductResponse GetProduct(GetProductRequest request);
     }
 }

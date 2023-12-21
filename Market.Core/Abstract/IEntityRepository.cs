@@ -15,6 +15,7 @@ namespace Market.Core.Abstract
         T Update(T entity);
 
         void Delete(T entity);
+
     }
 }
 

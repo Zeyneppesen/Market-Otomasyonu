@@ -6,17 +6,10 @@ namespace Market.Data.Concrete.Ef
 
     public class MarketDbContext:DbContext
     {
-        public MarketDbContext(DbContextOptions<MarketDbContext> options)
-          : base(options)
-        {
-
-        }
-
-        public MarketDbContext() { }
-
+     
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("Data Source = 'DESKTOP-R4ITLSH,1433\\MSSQLSERVER'; Initial Catalog =MarketDB;MultipleActiveResultSets=True; ");
+            optionsBuilder.UseSqlServer("Data Source = 'DESKTOP-R4ITLSH,1433\\MSSQLSERVER'; Initial Catalog =MarketDB;MultipleActiveResultSets=True; ");
         }
 
 

@@ -25,10 +25,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.AddSingleton<ILogging, Logging>(ILogging);
 ;
-builder.Services.AddDbContext<MarketDbContext>(options =>
-{
-    options.UseSqlServer("Data Source = 'DESKTOP-R4ITLSH,1433\\MSSQLSERVER'; Initial Catalog =MarketDB;MultipleActiveResultSets=True; ");
-});
+
+//builder.Services.AddDbContext<MarketDbContext>(options =>
+//{
+//    options.UseSqlServer("Data Source = 'DESKTOP-R4ITLSH,1433\\MSSQLSERVER'; Initial Catalog =MarketDB;MultipleActiveResultSets=True; ");
+//});
+
 builder.Services.AddLogging(log =>
 {
     log.ClearProviders();

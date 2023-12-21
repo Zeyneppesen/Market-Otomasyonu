@@ -1,0 +1,281 @@
+2023-12-07 10:22:16.051 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-07 10:22:16.228 +03:00 [DBG] Hosting starting
+2023-12-07 10:22:17.639 +03:00 [DBG] Connection id "0HMVMUKV5C6G4" accepted.
+2023-12-07 10:22:17.641 +03:00 [DBG] Connection id "0HMVMUKV5C6G5" accepted.
+2023-12-07 10:22:17.653 +03:00 [DBG] Connection id "0HMVMUKV5C6G4" started.
+2023-12-07 10:22:17.661 +03:00 [DBG] Connection id "0HMVMUKV5C6G5" started.
+2023-12-07 10:22:17.669 +03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 10:22:17.670 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-07 10:22:17.670 +03:00 [DBG] Loaded hosting startup assembly Market.Api
+2023-12-07 10:22:17.671 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-07 10:22:17.671 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-07 10:22:17.684 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 10:22:17.687 +03:00 [INF] Hosting environment: Development
+2023-12-07 10:22:17.688 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-07 10:22:17.688 +03:00 [DBG] Hosting started
+2023-12-07 10:22:28.547 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" accepted.
+2023-12-07 10:22:28.547 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" started.
+2023-12-07 10:22:28.548 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" accepted.
+2023-12-07 10:22:28.549 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" started.
+2023-12-07 10:22:28.582 +03:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-12-07 10:22:28.582 +03:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-12-07 10:22:28.594 +03:00 [DBG] Connection id "0HMVMUKV5C6G5" stopped.
+2023-12-07 10:22:28.597 +03:00 [DBG] Connection id "0HMVMUKV5C6G4" stopped.
+2023-12-07 10:22:28.605 +03:00 [DBG] Connection id "0HMVMUKV5C6G5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:22:28.605 +03:00 [DBG] Connection id "0HMVMUKV5C6G4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:22:28.632 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" received FIN.
+2023-12-07 10:22:28.647 +03:00 [DBG] Connection 0HMVMUKV5C6G6 established using the following protocol: "Tls12"
+2023-12-07 10:22:28.647 +03:00 [DBG] Connection 0HMVMUKV5C6G7 established using the following protocol: "Tls12"
+2023-12-07 10:22:28.728 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" is closed. The last processed stream ID was 0.
+2023-12-07 10:22:28.730 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:22:28.740 +03:00 [DBG] The connection queue processing loop for 0HMVMUKV5C6G6 completed.
+2023-12-07 10:22:28.745 +03:00 [DBG] Connection id "0HMVMUKV5C6G6" stopped.
+2023-12-07 10:22:28.870 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger - -
+2023-12-07 10:22:30.160 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-07 10:22:30.206 +03:00 [DBG] No candidates found for the request path '/swagger'
+2023-12-07 10:22:30.206 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:30.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger - - - 301 0 - 1391.8993ms
+2023-12-07 10:22:30.273 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/index.html - -
+2023-12-07 10:22:30.287 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-12-07 10:22:30.287 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:30.608 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-07 10:22:30.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/swagger-ui.css - -
+2023-12-07 10:22:30.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/swagger-ui-bundle.js - -
+2023-12-07 10:22:30.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/swagger-ui-standalone-preset.js - -
+2023-12-07 10:22:30.669 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-12-07 10:22:30.669 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-12-07 10:22:30.669 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-12-07 10:22:30.669 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:30.669 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:30.670 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:30.677 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-07 10:22:30.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/index.html - - - 200 - text/html;charset=utf-8 404.3077ms
+2023-12-07 10:22:30.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 10:22:30.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - -
+2023-12-07 10:22:30.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 14.6411ms
+2023-12-07 10:22:30.755 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-07 10:22:30.755 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-07 10:22:30.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/swagger-ui.css - - - 200 144929 text/css 86.1997ms
+2023-12-07 10:22:30.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 85.8752ms
+2023-12-07 10:22:30.793 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-07 10:22:30.794 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 124.5594ms
+2023-12-07 10:22:30.878 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 195.8844ms
+2023-12-07 10:22:31.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - -
+2023-12-07 10:22:31.106 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-12-07 10:22:31.106 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:31.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/favicon-32x32.png - -
+2023-12-07 10:22:31.136 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-12-07 10:22:31.136 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:22:31.137 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-07 10:22:31.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/favicon-32x32.png - - - 200 628 image/png 1.3394ms
+2023-12-07 10:22:31.431 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 325.5337ms
+2023-12-07 10:22:33.499 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" received FIN.
+2023-12-07 10:22:33.499 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" is closed. The last processed stream ID was 17.
+2023-12-07 10:22:33.499 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:22:33.500 +03:00 [DBG] The connection queue processing loop for 0HMVMUKV5C6G7 completed.
+2023-12-07 10:22:33.500 +03:00 [DBG] Connection id "0HMVMUKV5C6G7" stopped.
+2023-12-07 10:22:39.161 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" accepted.
+2023-12-07 10:22:39.161 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" started.
+2023-12-07 10:22:39.164 +03:00 [DBG] Connection 0HMVMUKV5C6G8 established using the following protocol: "Tls12"
+2023-12-07 10:22:39.166 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/api/Product/GetProduct - -
+2023-12-07 10:22:39.172 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Product/GetProduct'
+2023-12-07 10:22:39.179 +03:00 [DBG] Endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)' with route pattern 'api/Product/GetProduct' is valid for the request path '/api/Product/GetProduct'
+2023-12-07 10:22:39.179 +03:00 [DBG] Request matched endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:22:39.180 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-12-07 10:22:39.183 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:22:39.283 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.Concrete.DTO.GetProductResponse GetProduct(Market.Entity.Concrete.DTO.GetProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-07 10:22:39.286 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-07 10:22:39.286 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-07 10:22:39.286 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-07 10:22:39.287 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-07 10:22:39.287 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-07 10:22:39.289 +03:00 [DBG] Executing controller factory for controller Market.Api.Controllers.ProductController (Market.Api)
+2023-12-07 10:22:39.298 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 7.5916ms
+2023-12-07 10:22:39.301 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:22:39.302 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Market.Business.Abstract.IProductService' while attempting to activate 'Market.Api.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-07 10:22:39.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/api/Product/GetProduct - - - 500 - text/plain;+charset=utf-8 196.4042ms
+2023-12-07 10:22:43.518 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" received FIN.
+2023-12-07 10:22:43.518 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" is closed. The last processed stream ID was 1.
+2023-12-07 10:22:43.518 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:22:43.518 +03:00 [DBG] The connection queue processing loop for 0HMVMUKV5C6G8 completed.
+2023-12-07 10:22:43.533 +03:00 [DBG] Connection id "0HMVMUKV5C6G8" stopped.
+2023-12-07 10:47:08.610 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-07 10:47:08.715 +03:00 [DBG] Hosting starting
+2023-12-07 10:47:09.015 +03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 10:47:09.015 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-07 10:47:09.015 +03:00 [DBG] Loaded hosting startup assembly Market.Api
+2023-12-07 10:47:09.015 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-07 10:47:09.015 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-07 10:47:09.015 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 10:47:09.015 +03:00 [INF] Hosting environment: Development
+2023-12-07 10:47:09.015 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-07 10:47:09.016 +03:00 [DBG] Hosting started
+2023-12-07 10:47:09.485 +03:00 [DBG] Connection id "0HMVMV2ROPS31" received FIN.
+2023-12-07 10:47:09.491 +03:00 [DBG] Connection id "0HMVMV2ROPS31" accepted.
+2023-12-07 10:47:09.492 +03:00 [DBG] Connection id "0HMVMV2ROPS31" started.
+2023-12-07 10:47:09.509 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-07 10:47:09.560 +03:00 [DBG] Connection id "0HMVMV2ROPS31" stopped.
+2023-12-07 10:47:09.565 +03:00 [DBG] Connection id "0HMVMV2ROPS31" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:47:11.941 +03:00 [DBG] Connection id "0HMVMV2ROPS32" accepted.
+2023-12-07 10:47:11.943 +03:00 [DBG] Connection id "0HMVMV2ROPS32" started.
+2023-12-07 10:47:12.022 +03:00 [DBG] Connection 0HMVMV2ROPS32 established using the following protocol: "Tls12"
+2023-12-07 10:47:12.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/index.html - -
+2023-12-07 10:47:12.247 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-07 10:47:12.271 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-12-07 10:47:12.272 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:47:12.435 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-07 10:47:12.471 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-07 10:47:12.478 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 10:47:12.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/index.html - - - 200 - text/html;charset=utf-8 371.4044ms
+2023-12-07 10:47:12.478 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - -
+2023-12-07 10:47:12.488 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 10.5576ms
+2023-12-07 10:47:12.538 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.2249ms
+2023-12-07 10:47:12.759 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - -
+2023-12-07 10:47:12.759 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-12-07 10:47:12.759 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 10:47:12.972 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.4214ms
+2023-12-07 10:47:15.720 +03:00 [DBG] Connection id "0HMVMV2ROPS32" received FIN.
+2023-12-07 10:47:15.725 +03:00 [DBG] The connection queue processing loop for 0HMVMV2ROPS32 completed.
+2023-12-07 10:47:15.729 +03:00 [DBG] Connection id "0HMVMV2ROPS32" is closed. The last processed stream ID was 7.
+2023-12-07 10:47:15.729 +03:00 [DBG] Connection id "0HMVMV2ROPS32" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:47:15.739 +03:00 [DBG] Connection id "0HMVMV2ROPS32" stopped.
+2023-12-07 10:47:20.753 +03:00 [DBG] Connection id "0HMVMV2ROPS33" accepted.
+2023-12-07 10:47:20.753 +03:00 [DBG] Connection id "0HMVMV2ROPS33" started.
+2023-12-07 10:47:20.761 +03:00 [DBG] Connection 0HMVMV2ROPS33 established using the following protocol: "Tls12"
+2023-12-07 10:47:20.764 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/api/Product/GetProduct - -
+2023-12-07 10:47:20.770 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Product/GetProduct'
+2023-12-07 10:47:20.776 +03:00 [DBG] Endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)' with route pattern 'api/Product/GetProduct' is valid for the request path '/api/Product/GetProduct'
+2023-12-07 10:47:20.777 +03:00 [DBG] Request matched endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:47:20.780 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-12-07 10:47:20.784 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:47:20.860 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.Concrete.DTO.GetProductResponse GetProduct(Market.Entity.Concrete.DTO.GetProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-07 10:47:20.862 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-07 10:47:20.862 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-07 10:47:20.862 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-07 10:47:20.862 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-07 10:47:20.862 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-07 10:47:20.864 +03:00 [DBG] Executing controller factory for controller Market.Api.Controllers.ProductController (Market.Api)
+2023-12-07 10:47:20.873 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 4.7253ms
+2023-12-07 10:47:20.875 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 10:47:20.878 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Market.Business.Abstract.IProductService' while attempting to activate 'Market.Api.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-07 10:47:20.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/api/Product/GetProduct - - - 500 - text/plain;+charset=utf-8 124.5871ms
+2023-12-07 10:47:25.728 +03:00 [DBG] Connection id "0HMVMV2ROPS33" received FIN.
+2023-12-07 10:47:25.729 +03:00 [DBG] Connection id "0HMVMV2ROPS33" is closed. The last processed stream ID was 1.
+2023-12-07 10:47:25.729 +03:00 [DBG] Connection id "0HMVMV2ROPS33" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 10:47:25.729 +03:00 [DBG] The connection queue processing loop for 0HMVMV2ROPS33 completed.
+2023-12-07 10:47:25.730 +03:00 [DBG] Connection id "0HMVMV2ROPS33" stopped.
+2023-12-07 14:19:46.520 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-07 14:19:46.637 +03:00 [DBG] Hosting starting
+2023-12-07 14:19:46.907 +03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 14:19:46.907 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-07 14:19:46.907 +03:00 [DBG] Loaded hosting startup assembly Market.Api
+2023-12-07 14:19:46.907 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-12-07 14:19:46.907 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-12-07 14:19:46.908 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 14:19:46.908 +03:00 [INF] Hosting environment: Development
+2023-12-07 14:19:46.908 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-07 14:19:46.908 +03:00 [DBG] Hosting started
+2023-12-07 14:19:46.924 +03:00 [DBG] Connection id "0HMVN2PLP7FCK" received FIN.
+2023-12-07 14:19:46.931 +03:00 [DBG] Connection id "0HMVN2PLP7FCK" accepted.
+2023-12-07 14:19:46.933 +03:00 [DBG] Connection id "0HMVN2PLP7FCK" started.
+2023-12-07 14:19:46.964 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-12-07 14:19:47.113 +03:00 [DBG] Connection id "0HMVN2PLP7FCK" stopped.
+2023-12-07 14:19:47.120 +03:00 [DBG] Connection id "0HMVN2PLP7FCK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 14:19:47.394 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" accepted.
+2023-12-07 14:19:47.394 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" started.
+2023-12-07 14:19:47.524 +03:00 [DBG] Connection 0HMVN2PLP7FCL established using the following protocol: "Tls12"
+2023-12-07 14:19:47.682 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/index.html - -
+2023-12-07 14:19:47.838 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-07 14:19:47.862 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-12-07 14:19:47.863 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 14:19:48.065 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-12-07 14:19:48.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - -
+2023-12-07 14:19:48.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 14:19:48.112 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-12-07 14:19:48.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/index.html - - - 200 - text/html;charset=utf-8 437.1194ms
+2023-12-07 14:19:48.131 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 24.7728ms
+2023-12-07 14:19:48.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.2521ms
+2023-12-07 14:19:48.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - -
+2023-12-07 14:19:48.265 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-12-07 14:19:48.265 +03:00 [DBG] Request did not match any endpoints
+2023-12-07 14:19:48.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.4046ms
+2023-12-07 14:19:57.191 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7228/api/Product/GetProduct - -
+2023-12-07 14:19:57.196 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Product/GetProduct'
+2023-12-07 14:19:57.202 +03:00 [DBG] Endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)' with route pattern 'api/Product/GetProduct' is valid for the request path '/api/Product/GetProduct'
+2023-12-07 14:19:57.203 +03:00 [DBG] Request matched endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 14:19:57.206 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-12-07 14:19:57.209 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 14:19:57.277 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.Concrete.DTO.GetProductResponse GetProduct(Market.Entity.Concrete.DTO.GetProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-07 14:19:57.280 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-07 14:19:57.280 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-07 14:19:57.281 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-07 14:19:57.281 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-07 14:19:57.281 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-07 14:19:57.284 +03:00 [DBG] Executing controller factory for controller Market.Api.Controllers.ProductController (Market.Api)
+2023-12-07 14:19:57.296 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 8.3425ms
+2023-12-07 14:19:57.298 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-07 14:19:57.302 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Market.Business.Abstract.IProductService' while attempting to activate 'Market.Api.Controllers.ProductController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-07 14:19:57.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7228/api/Product/GetProduct - - - 500 - text/plain;+charset=utf-8 120.7653ms
+2023-12-07 14:20:04.355 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" received FIN.
+2023-12-07 14:20:04.359 +03:00 [DBG] The connection queue processing loop for 0HMVN2PLP7FCL completed.
+2023-12-07 14:20:04.361 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" is closed. The last processed stream ID was 9.
+2023-12-07 14:20:04.361 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-07 14:20:04.370 +03:00 [DBG] Connection id "0HMVN2PLP7FCL" stopped.

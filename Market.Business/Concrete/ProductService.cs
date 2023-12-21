@@ -1,11 +1,10 @@
-﻿using Market.Business.Abstract;
+﻿
+
+using Market.Business.Abstract;
+using Market.Data;
 using Market.Data.Abstract;
 using Market.Entity.Concrete.DTO;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Serilog.Core;
-
-
 
 namespace Market.Business.Concrete
 {
@@ -20,42 +19,36 @@ namespace Market.Business.Concrete
             _logger = logger;
         }
 
-        public GetProductResponse GetProduct([FromQuery] GetProductRequest request)
+
+
+        public Data.GetProductResponse GetProduct(Data.GetProductRequest request)
         {
-            
-            var response = new GetProductResponse();
+            var response = new Data.GetProductResponse();
             try
             {
-              
 
-                var products = _productRepository.GetList(p => p.Id == request.UserId);
+                var products = _productRepository.GetList(/*p => p.Id == request.UserId*/);
+                //foreach (var product in products)
+                //{
+                //var productModules = _productRepository.GetList();
+                List<ProductModal> productModels = new List<ProductModal>();
                 foreach (var product in products)
                 {
-                    var productModules = _productRepository.GetList();
-                    List<ProductModel> productModuless = new List<ProductModel>();
-                    foreach (var productModule in productModules)
-                    {
 
-                        var model = new ProductModel();
-                        model.Id = productModule.Id;
-                        model.CategoryId = productModule.CategoryId;
-                        model.Name = productModule.Name;
-                        model.UnitPrice = productModule.UnitPrice;
-                        model.Stock = productModule.Stok;
-                        model.Detail = productModule.Detail;
-                        model.InDate = productModule.InDate;
-                        model.OutDate = productModule.OutDate;
-                        model.ExpirationDate = productModule.ExpirationDate;
+                    var model = new ProductModal();
+                    model.Id = product.Id;
+                    model.CategoryId = product.CategoryId;
+                    model.Name = product.Name;
+                    model.UnitPrice = product.UnitPrice;
+                    model.Stock = product.Stok;
+                    model.Detail = product.Detail;
+                    model.InDate = product.InDate;
+                    model.OutDate = product.OutDate;
+                    model.ExpirationDate = product.ExpirationDate;
 
-                        productModuless.Add(model);
-                    }
-                    response.Products = productModuless;
-               
+                    productModels.Add(model);
                 }
-            
-            
-                response.Code = "200";
-            
+                //}
 
                 _logger.LogInformation("Veriler getirildi.");
                 string DosyaYolu = Environment.CurrentDirectory + @"\ERROR\Error.txt";
@@ -63,14 +56,14 @@ namespace Market.Business.Concrete
                 {
                     File.Create(DosyaYolu);
                 }
+
+                response.Products = productModels;
                 return response;
             }
             catch (Exception e)
             {
-              
-                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage"+e.Message);
-                response.Errors.Add("Bir hata ile karşılaşıldı. " + e.Message);
-                response.Code = "400";
+
+                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage" + e.Message);
                 return response;
             }
         }

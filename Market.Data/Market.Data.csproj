@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Market.Core\Market.Core.csproj" />
     <ProjectReference Include="..\Market.Entity\Market.Entity.csproj" />
   </ItemGroup>
 
