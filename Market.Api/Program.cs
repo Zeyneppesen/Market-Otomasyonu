@@ -1,12 +1,7 @@
-using Market.Data.Concrete.Ef;
-using Microsoft.EntityFrameworkCore;
-using System;
-using Serilog;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-using NuGet.ProjectModel;
 using Market.Api.Extensions;
-using Market.Api.Error;
+using Market.Data.Abstract;
+using Market.Entity;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,10 +14,10 @@ builder.Host.UseSerilog();
 //builder.Logging.AddSerilog();
 
 builder.Services.AddControllers();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDependency(); 
 //builder.AddSingleton<ILogging, Logging>(ILogging);
 ;
 

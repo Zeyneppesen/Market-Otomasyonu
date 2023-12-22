@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Market.Entity.Concrete.DTO
+namespace Market.Entity.DTO
 {
-    public class ProductModel
+    public class ModelProduct
     {
         public long Id { get; set; }
         public long CategoryId { get; set; }
@@ -17,7 +17,5 @@ namespace Market.Entity.Concrete.DTO
         public DateTime InDate { get; set; }
         public DateTime OutDate { get; set; }
         public DateTime ExpirationDate { get; set; }
-
-
     }
 }

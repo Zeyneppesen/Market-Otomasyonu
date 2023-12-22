@@ -11,7 +11,5 @@ namespace Market.Data.Abstract
 {
     public interface IProductRepository : IEntityRepository<Product>
     { 
-        
-
     }
 }

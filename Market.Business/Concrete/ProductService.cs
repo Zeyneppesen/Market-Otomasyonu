@@ -3,7 +3,8 @@
 using Market.Business.Abstract;
 using Market.Data;
 using Market.Data.Abstract;
-using Market.Entity.Concrete.DTO;
+using Market.Entity;
+using Market.Entity.DTO;
 using Microsoft.Extensions.Logging;
 
 namespace Market.Business.Concrete
@@ -21,9 +22,9 @@ namespace Market.Business.Concrete
 
 
 
-        public Data.GetProductResponse GetProduct(Data.GetProductRequest request)
+        public GetProductResponse GetProduct(GetProductRequest request)
         {
-            var response = new Data.GetProductResponse();
+            var response = new GetProductResponse();
             try
             {
 
@@ -31,20 +32,18 @@ namespace Market.Business.Concrete
                 //foreach (var product in products)
                 //{
                 //var productModules = _productRepository.GetList();
-                List<ProductModal> productModels = new List<ProductModal>();
+                List<ModelProduct> productModels = new List<ModelProduct>();
                 foreach (var product in products)
                 {
 
-                    var model = new ProductModal();
+                    var model = new ModelProduct();
                     model.Id = product.Id;
                     model.CategoryId = product.CategoryId;
                     model.Name = product.Name;
                     model.UnitPrice = product.UnitPrice;
                     model.Stock = product.Stok;
                     model.Detail = product.Detail;
-                    model.InDate = product.InDate;
-                    model.OutDate = product.OutDate;
-                    model.ExpirationDate = product.ExpirationDate;
+
 
                     productModels.Add(model);
                 }

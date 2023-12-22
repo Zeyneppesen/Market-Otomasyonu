@@ -5,6 +5,7 @@ using Market.Data.Abstract;
 using Market.Data.Concrete.Ef;
 using Serilog.Events;
 using Serilog;
+using Market.Entity;
 
 namespace Market.Api.Extensions
 {

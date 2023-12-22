@@ -1,11 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Market.Entity.Concrete.DTO;
-using Market.Business.Abstract;
-using System.Net.Http;
-using Swashbuckle.AspNetCore.Annotations;
-using Market.Business.Concrete;
-using Microsoft.EntityFrameworkCore;
-using Market.Entity.Concrete.Model;
+﻿using Market.Business.Abstract;
+using Market.Entity;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace Market.Api.Controllers
