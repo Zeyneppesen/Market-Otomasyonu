@@ -1,6 +1,4 @@
-﻿
-
-using Market.Business.Abstract;
+﻿using Market.Business.Abstract;
 using Market.Data;
 using Market.Data.Abstract;
 using Market.Entity;
@@ -14,15 +12,14 @@ namespace Market.Business.Concrete
         private readonly IProductRepository _productRepository;
         private readonly ILogger<ProductService> _logger;
 
-        public ProductService(IProductRepository productRepository,ILogger< ProductService >logger)
+        public ProductService(IProductRepository productRepository, ILogger<ProductService> logger)
         {
             _productRepository = productRepository;
-            _logger = logger;
+             _logger = logger;
         }
 
 
-
-        public GetProductResponse GetProduct(GetProductRequest request)
+        public GetProductResponse GetList(GetProductRequest request)
         {
             var response = new GetProductResponse();
             try
@@ -32,7 +29,7 @@ namespace Market.Business.Concrete
                 //foreach (var product in products)
                 //{
                 //var productModules = _productRepository.GetList();
-                List<ModelProduct> productModels = new List<ModelProduct>();
+                List<ModelProduct> productsModels = new List<ModelProduct>();
                 foreach (var product in products)
                 {
 
@@ -43,11 +40,16 @@ namespace Market.Business.Concrete
                     model.UnitPrice = product.UnitPrice;
                     model.Stock = product.Stok;
                     model.Detail = product.Detail;
+                    model.Status = product.Status;
+                    model.CreatedDate = product.CreatedDate;
+                    model.ModifiedDate = product.ModifiedDate;
+                    model.DeletedDate = product.DeletedDate;
 
 
-                    productModels.Add(model);
+                    productsModels.Add(model);
                 }
                 //}
+                response.ProductModels = productsModels;
 
                 _logger.LogInformation("Veriler getirildi.");
                 string DosyaYolu = Environment.CurrentDirectory + @"\ERROR\Error.txt";
@@ -56,15 +58,21 @@ namespace Market.Business.Concrete
                     File.Create(DosyaYolu);
                 }
 
-                response.Products = productModels;
+                response.Code = "200";
+                response.Message = "Veriler getirildi";
                 return response;
             }
             catch (Exception e)
             {
 
-                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage" + e.Message);
+
+                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage}" + e.Message);
+                 response.Errors.Add("Bir hata ile karşılaşıldı. " + e.Message);
+                response.Code = "400";
                 return response;
             }
         }
     }
+
+      
 }

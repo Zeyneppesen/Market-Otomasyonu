@@ -1,0 +1,986 @@
+2023-12-27 09:55:21.235 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 09:55:21.270 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 09:55:21.270 +03:00 [INF] Hosting environment: Development
+2023-12-27 09:55:21.270 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 09:55:24.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 09:55:25.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1016.6354ms
+2023-12-27 09:55:25.418 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 09:55:25.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 09:55:25.429 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.7583ms
+2023-12-27 09:55:25.531 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 113.0340ms
+2023-12-27 09:55:25.636 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 09:55:25.869 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.9374ms
+2023-12-27 09:55:39.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 09:55:39.881 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 09:55:39.885 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 09:55:39.917 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 09:55:41.421 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 30
+ClientConnectionId:16aada69-0960-4b1b-bc3e-4e6d82eef90f
+Error Number:207,State:1,Class:16
+2023-12-27 09:55:41.467 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 09:55:41.487 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1566.4338ms
+2023-12-27 09:55:41.488 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 09:55:41.488 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1614.6914ms
+2023-12-27 10:10:17.984 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 10:10:18.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 10:10:18.027 +03:00 [INF] Hosting environment: Development
+2023-12-27 10:10:18.027 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 10:10:21.034 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 10:10:21.348 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 316.6022ms
+2023-12-27 10:10:21.350 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 10:10:21.356 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 10:10:21.360 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.8293ms
+2023-12-27 10:10:21.404 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.5580ms
+2023-12-27 10:10:21.494 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 10:10:21.611 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.9203ms
+2023-12-27 10:10:25.115 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 10:10:25.129 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 10:10:25.134 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 10:10:25.166 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 10:10:41.682 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageA network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2023-12-27 10:10:41.746 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 10:10:41.787 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 16612.802ms
+2023-12-27 10:10:41.790 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 10:10:41.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 16674.9954ms
+2023-12-27 10:44:54.463 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 10:44:54.491 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 10:44:54.491 +03:00 [INF] Hosting environment: Development
+2023-12-27 10:44:54.491 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 10:44:57.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 10:44:58.024 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 400.3737ms
+2023-12-27 10:44:58.025 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 10:44:58.030 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 10:44:58.040 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.3379ms
+2023-12-27 10:44:58.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.3107ms
+2023-12-27 10:44:58.143 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 10:44:58.283 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.6135ms
+2023-12-27 10:45:01.849 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 10:45:01.861 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 10:45:01.868 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 10:45:01.903 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 10:45:18.146 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageA network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2023-12-27 10:45:18.204 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 10:45:18.227 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 16318.9596ms
+2023-12-27 10:45:18.229 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 10:45:18.229 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 16379.7634ms
+2023-12-27 12:10:22.121 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 12:10:22.148 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 12:10:22.148 +03:00 [INF] Hosting environment: Development
+2023-12-27 12:10:22.148 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 12:10:22.687 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 12:10:23.073 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 386.1334ms
+2023-12-27 12:10:23.076 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 12:10:23.079 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 12:10:23.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.9650ms
+2023-12-27 12:10:23.129 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7765ms
+2023-12-27 12:10:23.239 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 12:10:23.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.5014ms
+2023-12-27 12:10:37.077 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 12:10:37.093 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 12:10:37.104 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:10:37.157 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 12:10:54.364 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageA network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2023-12-27 12:10:54.418 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 12:10:54.453 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 17288.03ms
+2023-12-27 12:10:54.456 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:10:54.456 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 17379.1575ms
+2023-12-27 12:51:19.443 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 12:51:19.562 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 12:51:19.564 +03:00 [INF] Hosting environment: Development
+2023-12-27 12:51:19.564 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 12:51:20.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 12:51:20.539 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 444.9477ms
+2023-12-27 12:51:20.542 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 12:51:20.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 12:51:20.553 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.2272ms
+2023-12-27 12:51:20.605 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.3522ms
+2023-12-27 12:51:20.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 12:51:20.846 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.3339ms
+2023-12-27 12:51:24.131 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 12:51:24.143 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 12:51:24.151 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:51:24.204 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 12:51:27.149 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:76f509ce-18cc-4f2b-804d-422c14a7d33f
+Error Number:207,State:1,Class:16
+2023-12-27 12:51:27.238 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 12:51:27.292 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3080.6945ms
+2023-12-27 12:51:27.296 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:51:27.297 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3165.1528ms
+2023-12-27 12:52:16.494 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 12:52:16.543 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 12:52:16.544 +03:00 [INF] Hosting environment: Development
+2023-12-27 12:52:16.545 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 12:52:19.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 12:52:20.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 407.1529ms
+2023-12-27 12:52:20.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 12:52:20.181 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 12:52:20.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.5263ms
+2023-12-27 12:52:20.225 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.5352ms
+2023-12-27 12:52:20.314 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 12:52:20.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.0718ms
+2023-12-27 12:52:24.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 12:52:24.411 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 12:52:24.419 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:52:24.484 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 12:52:27.011 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:9e47bb86-76e2-48c5-9bdc-1b08cb4c1d48
+Error Number:207,State:1,Class:16
+2023-12-27 12:52:27.080 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 12:52:27.136 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2642.6583ms
+2023-12-27 12:52:27.140 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 12:52:27.140 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2743.0484ms
+2023-12-27 13:07:37.139 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:07:37.183 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:07:37.184 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:07:37.184 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:07:37.727 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:07:38.347 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 626.5917ms
+2023-12-27 13:07:38.350 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:07:38.353 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:07:38.358 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.0953ms
+2023-12-27 13:07:38.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.5040ms
+2023-12-27 13:07:38.511 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:07:38.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.3921ms
+2023-12-27 13:08:51.488 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:08:51.509 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:08:51.509 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:08:51.509 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:08:51.998 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:08:52.401 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 406.1334ms
+2023-12-27 13:08:52.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:08:52.406 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:08:52.410 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.4881ms
+2023-12-27 13:08:52.465 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.1046ms
+2023-12-27 13:08:52.574 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:08:52.768 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.6215ms
+2023-12-27 13:08:56.114 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:08:56.133 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:08:56.142 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:08:56.200 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:08:59.263 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:ce17f9ed-d272-4bd1-a6c6-a4e4cfb1350d
+Error Number:207,State:1,Class:16
+2023-12-27 13:08:59.361 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:08:59.420 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3209.8133ms
+2023-12-27 13:08:59.423 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:08:59.424 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3310.1964ms
+2023-12-27 13:28:17.651 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:28:17.712 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:28:17.713 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:28:17.713 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:28:18.193 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:28:18.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 529.5610ms
+2023-12-27 13:28:18.726 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:28:18.732 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:28:18.739 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.2402ms
+2023-12-27 13:28:18.866 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.7231ms
+2023-12-27 13:28:18.960 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:28:19.142 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 182.2732ms
+2023-12-27 13:28:23.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:28:23.625 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:28:23.632 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:28:23.695 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:28:26.785 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:204c2739-ce8c-4fbf-8577-98e1412e8831
+Error Number:207,State:1,Class:16
+2023-12-27 13:28:26.858 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:28:26.923 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3217.8757ms
+2023-12-27 13:28:26.927 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:28:26.927 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3313.5742ms
+2023-12-27 13:44:24.934 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:44:25.006 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:44:25.007 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:44:25.007 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:44:25.474 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:44:25.966 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 494.7618ms
+2023-12-27 13:44:25.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:44:25.972 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:44:25.977 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.5447ms
+2023-12-27 13:44:26.034 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.8215ms
+2023-12-27 13:44:26.118 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:44:26.318 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 200.7048ms
+2023-12-27 13:44:30.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:44:30.109 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:44:30.117 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:44:30.171 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:44:33.182 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:9639992b-a451-41b8-a484-50316fc140ca
+Error Number:207,State:1,Class:16
+2023-12-27 13:44:33.268 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:44:33.325 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3147.935ms
+2023-12-27 13:44:33.327 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:44:33.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3231.2058ms
+2023-12-27 13:45:36.132 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:45:36.157 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:45:36.158 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:45:36.158 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:45:39.419 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:45:39.745 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 335.7106ms
+2023-12-27 13:45:39.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:45:39.751 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:45:39.753 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 2.5346ms
+2023-12-27 13:45:39.800 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.0824ms
+2023-12-27 13:45:39.890 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:45:40.025 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.6049ms
+2023-12-27 13:45:43.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:45:43.660 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:45:43.668 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:45:43.711 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:45:46.026 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:122a0e74-15f6-4f9d-8966-f4157992b839
+Error Number:207,State:1,Class:16
+2023-12-27 13:45:46.085 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:45:46.127 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2407.6467ms
+2023-12-27 13:45:46.130 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:45:46.131 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2483.0061ms
+2023-12-27 13:46:49.403 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:46:49.425 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:46:49.426 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:46:49.426 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:46:49.914 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:46:50.337 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:46:50.337 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:46:50.339 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 428.7968ms
+2023-12-27 13:46:50.343 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.4577ms
+2023-12-27 13:46:50.387 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.6606ms
+2023-12-27 13:46:50.477 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:46:50.629 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 152.0820ms
+2023-12-27 13:46:54.051 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:46:54.066 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:46:54.075 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:46:54.136 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:46:56.580 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:caa7252b-beed-4687-a227-fd51dff1572f
+Error Number:207,State:1,Class:16
+2023-12-27 13:46:56.676 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:46:56.716 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2573.6487ms
+2023-12-27 13:46:56.718 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:46:56.719 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2668.2102ms
+2023-12-27 13:55:00.741 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 13:55:00.789 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 13:55:00.790 +03:00 [INF] Hosting environment: Development
+2023-12-27 13:55:00.791 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 13:55:01.276 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger - -
+2023-12-27 13:55:01.523 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger - - - 301 0 - 248.2781ms
+2023-12-27 13:55:01.529 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 13:55:01.739 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 209.2490ms
+2023-12-27 13:55:01.745 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui.css - -
+2023-12-27 13:55:01.748 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui-bundle.js - -
+2023-12-27 13:55:01.750 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui-standalone-preset.js - -
+2023-12-27 13:55:01.757 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 13:55:01.757 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 13:55:01.764 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 13.5743ms
+2023-12-27 13:55:01.848 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-27 13:55:01.849 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-27 13:55:01.849 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-27 13:55:01.852 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 101.9658ms
+2023-12-27 13:55:01.852 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 103.4318ms
+2023-12-27 13:55:01.852 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/swagger-ui.css - - - 200 144929 text/css 107.1841ms
+2023-12-27 13:55:01.866 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 115.6795ms
+2023-12-27 13:55:02.139 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 13:55:02.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - -
+2023-12-27 13:55:02.176 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-27 13:55:02.177 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - - - 200 628 image/png 1.6355ms
+2023-12-27 13:55:02.309 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.3486ms
+2023-12-27 13:55:05.272 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 13:55:05.282 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 13:55:05.290 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:55:05.333 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 13:55:08.137 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 13:55:08.174 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2833.7169ms
+2023-12-27 13:55:08.176 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 13:55:08.177 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2904.2814ms
+2023-12-27 14:05:31.713 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 14:05:31.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 14:05:31.779 +03:00 [INF] Hosting environment: Development
+2023-12-27 14:05:31.779 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 14:05:35.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 14:05:37.597 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1643.1777ms
+2023-12-27 14:05:37.633 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 14:05:37.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 14:05:37.645 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.2397ms
+2023-12-27 14:05:38.078 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 445.1096ms
+2023-12-27 14:05:38.219 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 14:05:38.535 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 315.5540ms
+2023-12-27 14:05:41.971 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 14:05:41.986 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 14:05:41.997 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:05:42.075 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 14:05:46.252 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:2bd077fb-1e26-494e-8272-1e3496fd0324
+Error Number:207,State:1,Class:16
+2023-12-27 14:05:46.349 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 14:05:46.409 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 4323.4777ms
+2023-12-27 14:05:46.412 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:05:46.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 4440.5888ms
+2023-12-27 14:07:15.251 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 14:07:15.294 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 14:07:15.295 +03:00 [INF] Hosting environment: Development
+2023-12-27 14:07:15.295 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 14:07:18.646 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 14:07:19.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 416.4717ms
+2023-12-27 14:07:19.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 14:07:19.068 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 14:07:19.074 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 6.0006ms
+2023-12-27 14:07:19.125 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.6261ms
+2023-12-27 14:07:19.291 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 14:07:19.478 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 186.8034ms
+2023-12-27 14:07:23.114 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 14:07:23.130 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 14:07:23.140 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:07:23.185 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 14:07:26.243 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:bc4e023b-b184-4d56-af4a-e6d96ff2b380
+Error Number:207,State:1,Class:16
+2023-12-27 14:07:26.323 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 14:07:26.387 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3193.4193ms
+2023-12-27 14:07:26.391 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:07:26.392 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3277.8729ms
+2023-12-27 14:11:08.706 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 14:11:08.731 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 14:11:08.732 +03:00 [INF] Hosting environment: Development
+2023-12-27 14:11:08.732 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 14:11:09.252 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 14:11:09.630 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 383.3787ms
+2023-12-27 14:11:09.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 14:11:09.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 14:11:09.644 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.7793ms
+2023-12-27 14:11:09.698 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.3049ms
+2023-12-27 14:11:09.774 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 14:11:09.890 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.0012ms
+2023-12-27 14:11:12.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 14:11:12.437 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 14:11:12.441 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:11:12.465 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 14:11:13.770 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessageInvalid column name 'id'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Market.Core.Data.Ef.EfEntityRepository`2.GetList(Expression`1 filter) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Core\Data\Ef\EfEntityRepository.cs:line 51
+   at Market.Business.Concrete.ProductService.GetProduct(GetProductRequest request) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 29
+ClientConnectionId:2e928a12-d7ec-48e5-9675-fbd6fb4ece33
+Error Number:207,State:1,Class:16
+2023-12-27 14:11:13.804 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 14:11:13.825 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1355.6978ms
+2023-12-27 14:11:13.826 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 14:11:13.826 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1397.8103ms
+2023-12-27 15:01:12.150 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:01:12.217 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:01:12.219 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:01:12.219 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:01:14.152 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:01:15.269 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1118.8365ms
+2023-12-27 15:01:15.270 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:01:15.277 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:01:15.282 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.8622ms
+2023-12-27 15:01:15.336 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.3054ms
+2023-12-27 15:01:15.440 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:01:15.661 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 221.1380ms
+2023-12-27 15:01:18.255 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:01:18.268 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:01:18.275 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:01:18.328 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:01:21.356 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:01:21.407 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 3071.8916ms
+2023-12-27 15:01:21.409 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:01:21.410 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3154.7946ms
+2023-12-27 15:04:04.596 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:04:04.646 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:04:04.648 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:04:04.648 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:04:06.348 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:04:07.031 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 687.7547ms
+2023-12-27 15:04:07.031 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:04:07.037 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:04:07.041 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.6770ms
+2023-12-27 15:04:07.098 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.3187ms
+2023-12-27 15:04:07.180 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:04:07.441 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 260.7097ms
+2023-12-27 15:04:10.845 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:04:10.859 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:04:10.867 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:04:10.923 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:04:13.867 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:04:13.903 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2970.7753ms
+2023-12-27 15:04:13.905 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:04:13.906 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3060.4732ms
+2023-12-27 15:06:10.251 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:06:10.277 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:06:10.277 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:06:10.277 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:06:13.665 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:06:14.010 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 350.0109ms
+2023-12-27 15:06:14.014 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:06:14.017 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:06:14.022 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.3300ms
+2023-12-27 15:06:14.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.6437ms
+2023-12-27 15:06:14.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:06:14.261 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.9461ms
+2023-12-27 15:06:17.456 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:06:17.471 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:06:17.478 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:06:17.527 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:06:19.888 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:06:19.924 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2389.9998ms
+2023-12-27 15:06:19.927 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:06:19.927 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2470.5990ms
+2023-12-27 15:07:14.170 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:07:14.221 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:07:14.222 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:07:14.222 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:07:14.544 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:07:14.977 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 437.4417ms
+2023-12-27 15:07:14.981 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:07:14.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:07:14.987 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.9050ms
+2023-12-27 15:07:15.035 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.1980ms
+2023-12-27 15:07:15.134 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:07:15.293 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.4385ms
+2023-12-27 15:07:18.339 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:07:18.347 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:07:18.352 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:07:18.378 +03:00 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetList() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:07:20.764 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:07:20.810 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetList (Market.Api) in 2423.9706ms
+2023-12-27 15:07:20.812 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:07:20.813 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2473.7091ms
+2023-12-27 15:08:21.287 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:08:21.354 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:08:21.355 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:08:21.355 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:08:24.610 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:08:25.486 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 890.6310ms
+2023-12-27 15:08:25.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:08:25.668 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 8.2734ms
+2023-12-27 15:08:25.930 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:08:26.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 280.7502ms
+2023-12-27 15:08:29.785 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:08:29.815 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:08:29.824 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:08:29.929 +03:00 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetList() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:08:33.693 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:08:33.719 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetList (Market.Api) in 3784.2106ms
+2023-12-27 15:08:33.720 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:08:33.720 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3935.6345ms
+2023-12-27 15:08:38.173 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:08:38.174 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:08:38.174 +03:00 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetList() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:08:38.337 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:08:38.337 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetList (Market.Api) in 162.4808ms
+2023-12-27 15:08:38.337 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetList (Market.Api)'
+2023-12-27 15:08:38.337 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 164.0773ms
+2023-12-27 15:14:39.948 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:14:39.998 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:14:40.000 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:14:40.000 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:14:42.531 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:14:43.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 566.7165ms
+2023-12-27 15:14:43.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:14:43.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:14:43.106 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.0215ms
+2023-12-27 15:14:43.205 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 103.5255ms
+2023-12-27 15:14:43.284 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:14:43.901 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 616.5246ms
+2023-12-27 15:14:46.999 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:14:47.012 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:14:47.021 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:14:47.078 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:14:49.961 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:14:50.018 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2934.1763ms
+2023-12-27 15:14:50.022 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:14:50.023 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 3023.4256ms
+2023-12-27 15:17:37.516 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:17:37.539 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:17:37.540 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:17:37.540 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:17:41.019 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:17:41.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:17:41.433 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 413.8259ms
+2023-12-27 15:17:41.437 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 7.3710ms
+2023-12-27 15:17:41.440 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:17:41.490 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.9237ms
+2023-12-27 15:17:41.581 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:17:41.784 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 203.1261ms
+2023-12-27 15:17:46.253 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:17:46.267 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:17:46.275 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:17:46.318 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:17:48.820 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:17:48.869 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2543.6279ms
+2023-12-27 15:17:48.871 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:17:48.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2618.9277ms
+2023-12-27 15:32:20.223 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:32:20.246 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:32:20.247 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:32:20.247 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:32:20.692 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:32:21.056 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 372.6532ms
+2023-12-27 15:32:21.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:32:21.062 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:32:21.067 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.5081ms
+2023-12-27 15:32:21.113 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2997ms
+2023-12-27 15:32:21.187 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:32:21.394 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.9252ms
+2023-12-27 15:32:24.466 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:32:24.476 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:32:24.483 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:32:24.503 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:37:28.682 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:37:28.709 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:37:28.709 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:37:28.709 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:37:29.141 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:37:29.438 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 300.4268ms
+2023-12-27 15:37:29.504 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:37:29.505 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:37:29.508 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 2.9297ms
+2023-12-27 15:37:29.548 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.1325ms
+2023-12-27 15:37:29.625 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:37:29.753 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.6012ms
+2023-12-27 15:37:32.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:37:32.682 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:37:32.687 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:37:32.706 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:37:33.867 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:37:33.892 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1183.3405ms
+2023-12-27 15:37:33.893 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:37:33.893 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1220.8486ms
+2023-12-27 15:39:14.360 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:39:14.393 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:39:14.394 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:39:14.394 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:39:17.496 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:39:17.825 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 331.0638ms
+2023-12-27 15:39:17.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:39:17.829 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:39:17.834 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.2808ms
+2023-12-27 15:39:17.885 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.6490ms
+2023-12-27 15:39:17.957 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:39:18.105 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.5184ms
+2023-12-27 15:39:22.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:39:22.087 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:39:22.094 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:39:22.132 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:40:36.754 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:40:36.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:40:36.793 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:40:36.794 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:40:42.014 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:40:42.074 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:40:42.076 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:40:42.076 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:40:44.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:40:45.182 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:40:45.183 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 277.2613ms
+2023-12-27 15:40:45.188 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:40:45.188 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 6.3362ms
+2023-12-27 15:40:45.233 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.3090ms
+2023-12-27 15:40:45.296 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:40:45.406 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.9042ms
+2023-12-27 15:40:50.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:40:50.105 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:40:50.112 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:40:50.140 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:50:17.155 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:50:17.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:50:17.193 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:50:17.193 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:50:17.698 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:50:18.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 388.1532ms
+2023-12-27 15:50:18.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:50:18.092 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:50:18.095 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 2.9212ms
+2023-12-27 15:50:18.138 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.0669ms
+2023-12-27 15:50:18.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:50:18.328 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.4744ms
+2023-12-27 15:50:20.881 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:50:20.889 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:50:20.893 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:50:20.916 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:50:22.059 +03:00 [INF] Veriler getirildi.
+2023-12-27 15:50:22.067 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:50:22.089 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1169.0764ms
+2023-12-27 15:50:22.091 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:50:22.092 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1210.8098ms
+2023-12-27 15:51:25.812 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:51:25.846 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:51:25.847 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:51:25.847 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:51:28.776 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:51:29.081 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 308.6168ms
+2023-12-27 15:51:29.083 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:51:29.087 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:51:29.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 2.9104ms
+2023-12-27 15:51:29.131 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.4422ms
+2023-12-27 15:51:29.213 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:51:29.343 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.7013ms
+2023-12-27 15:51:31.838 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:51:31.851 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:51:31.858 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:51:31.891 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:51:33.566 +03:00 [INF] Veriler getirildi.
+2023-12-27 15:51:33.584 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:51:33.644 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1746.6757ms
+2023-12-27 15:51:33.646 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:51:33.647 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1808.5423ms
+2023-12-27 15:52:06.338 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-27 15:52:06.384 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-27 15:52:06.385 +03:00 [INF] Hosting environment: Development
+2023-12-27 15:52:06.386 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-27 15:52:09.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-27 15:52:09.704 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 304.6941ms
+2023-12-27 15:52:09.704 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-27 15:52:09.709 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-27 15:52:09.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.1432ms
+2023-12-27 15:52:09.756 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.8800ms
+2023-12-27 15:52:09.830 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-27 15:52:09.954 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.8545ms
+2023-12-27 15:52:13.051 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-27 15:52:13.069 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-27 15:52:13.078 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:52:13.121 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-27 15:52:14.876 +03:00 [INF] Veriler getirildi.
+2023-12-27 15:52:14.888 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-27 15:52:14.937 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1807.8504ms
+2023-12-27 15:52:14.940 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-27 15:52:14.940 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1889.0570ms

@@ -19,13 +19,14 @@ namespace Market.Api.Controllers
             _productService = productService;
 
         }
+    
 
         [HttpGet]
         [Route("GetProduct")]
         public GetProductResponse GetProduct()
         {
             GetProductRequest request = new GetProductRequest();
-            return _productService.GetProduct(request);
+            return _productService.GetList(request);
         }
 
     }

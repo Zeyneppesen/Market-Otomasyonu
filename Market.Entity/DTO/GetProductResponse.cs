@@ -10,7 +10,7 @@ namespace Market.Entity
     public class GetProductResponse : BaseApiResponse
     {
        // public List<ProductModal> Products { get; set; }
-        public List<ModelProduct> Products { get; set; }
+        public List<ModelProduct> ProductModels { get; set; }
     }
     }
        

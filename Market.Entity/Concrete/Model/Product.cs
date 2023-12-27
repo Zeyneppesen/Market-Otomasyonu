@@ -11,7 +11,8 @@ namespace Market.Entity.Concrete.Model
     [Table("Products")]
     public class Product:BaseEntity
     {
-
+        [Column("Id")]
+        public long Id { get; set; }
         [Column("CategoryId")]
         public long CategoryId { get; set; }
         [Column("Name")]
@@ -23,5 +24,16 @@ namespace Market.Entity.Concrete.Model
         [Column("Detail")]
         public string Detail { get; set; }
 
+        [Column("status")]
+        public bool Status { get; set; }
+
+        [Column("created_date")]
+        public DateTime CreatedDate { get; set; }
+
+        [Column("modified_date")]
+        public DateTime ModifiedDate { get; set; }
+
+        [Column("deleted_date")]
+        public DateTime DeletedDate { get; set; }
     }
 }
