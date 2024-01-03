@@ -28,6 +28,19 @@ namespace Market.Api.Controllers
             GetProductRequest request = new GetProductRequest();
             return _productService.GetList(request);
         }
+        [HttpGet("Id si verilen kategoriyi listele")]
+        public GetProductResponse GetProductByCategory(long categoryId)
+        {
+            GetProductRequest request = new GetProductRequest();
+            return _productService.GetListByCategory(request, categoryId);
+        }
+        [HttpGet("Ürünün son kullanma tarihi")]
+        public GetProductResponse GetProductExp(string productName)
+        {
+            GetProductRequest request = new GetProductRequest();
+            return _productService.GetProductExp(request, productName);
+        }
+
 
     }
 }

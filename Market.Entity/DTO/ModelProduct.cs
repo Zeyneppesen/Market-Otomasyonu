@@ -25,5 +25,6 @@ namespace Market.Entity.DTO
         public DateTime ModifiedDate { get; set; }
 
         public DateTime DeletedDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
     }
 }

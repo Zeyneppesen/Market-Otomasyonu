@@ -1,0 +1,21 @@
+2024-01-02 10:25:09.249 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-02 10:25:09.292 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-02 10:25:09.293 +03:00 [INF] Hosting environment: Development
+2024-01-02 10:25:09.293 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-02 10:25:12.780 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-02 10:25:13.801 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-02 10:25:13.810 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 7.0180ms
+2024-01-02 10:25:13.816 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1058.0979ms
+2024-01-02 10:25:13.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-02 10:25:14.042 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 218.6814ms
+2024-01-02 10:25:14.183 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-02 10:25:14.421 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.9545ms
+2024-01-02 10:25:18.408 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2024-01-02 10:25:18.418 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-02 10:25:18.423 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-02 10:25:18.452 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-02 10:25:19.929 +03:00 [INF] Veriler getirildi.
+2024-01-02 10:25:19.936 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-02 10:25:19.965 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 1506.2044ms
+2024-01-02 10:25:19.966 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-02 10:25:19.967 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 1558.5147ms

@@ -1,0 +1,24 @@
+2023-12-29 09:58:10.608 +03:00 [INF] Now listening on: http://localhost:5002
+2023-12-29 09:58:10.645 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-29 09:58:10.646 +03:00 [INF] Hosting environment: Development
+2023-12-29 09:58:10.646 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2023-12-29 09:58:11.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2023-12-29 09:58:11.835 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 736.6437ms
+2023-12-29 09:58:11.841 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2023-12-29 09:58:11.843 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2023-12-29 09:58:11.849 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 6.3229ms
+2023-12-29 09:58:13.063 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1221.8070ms
+2023-12-29 09:58:13.131 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2023-12-29 09:58:13.158 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - -
+2023-12-29 09:58:13.178 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-29 09:58:13.179 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - - - 200 628 image/png 21.0061ms
+2023-12-29 09:58:13.318 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.5422ms
+2023-12-29 09:58:18.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2023-12-29 09:58:18.659 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-12-29 09:58:18.666 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-29 09:58:18.709 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2023-12-29 09:58:20.867 +03:00 [INF] Veriler getirildi.
+2023-12-29 09:58:20.875 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2023-12-29 09:58:20.914 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2199.9902ms
+2023-12-29 09:58:20.916 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2023-12-29 09:58:20.916 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2264.5023ms
