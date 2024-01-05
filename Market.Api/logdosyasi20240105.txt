@@ -1,0 +1,58 @@
+2024-01-05 15:41:45.626 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-05 15:41:45.680 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 15:41:45.681 +03:00 [INF] Hosting environment: Development
+2024-01-05 15:41:45.681 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-05 15:41:49.308 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-05 15:41:50.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 712.0143ms
+2024-01-05 15:41:50.026 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-05 15:41:50.027 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-05 15:41:50.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.8894ms
+2024-01-05 15:41:50.298 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 272.6413ms
+2024-01-05 15:41:50.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-05 15:41:50.628 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.1300ms
+2024-01-05 15:42:09.899 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=Bula%C5%9F%C4%B1k%20Deterjan%C4%B1 - -
+2024-01-05 15:42:09.913 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-05 15:42:09.918 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-05 15:42:09.953 +03:00 [INF] Route matched with {action = "GetProductExp", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProductExp(System.String) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-05 15:42:12.662 +03:00 [INF] Veriler getirildi.
+2024-01-05 15:42:12.671 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-05 15:42:12.710 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProductExp (Market.Api) in 2748.59ms
+2024-01-05 15:42:12.713 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-05 15:42:12.713 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=Bula%C5%9F%C4%B1k%20Deterjan%C4%B1 - - - 200 - application/json;+charset=utf-8 2814.5332ms
+2024-01-05 15:43:12.155 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=Bula%C5%9F%C4%B1k%20Deterjan%C4%B1 - -
+2024-01-05 15:43:12.158 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-05 15:43:12.159 +03:00 [INF] Route matched with {action = "GetProductExp", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProductExp(System.String) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-05 15:43:12.298 +03:00 [INF] Veriler getirildi.
+2024-01-05 15:43:12.298 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-05 15:43:12.298 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProductExp (Market.Api) in 139.5047ms
+2024-01-05 15:43:12.298 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-05 15:43:12.299 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=Bula%C5%9F%C4%B1k%20Deterjan%C4%B1 - - - 200 - application/json;+charset=utf-8 143.7459ms
+2024-01-05 15:44:49.455 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-05 15:44:49.502 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 15:44:49.503 +03:00 [INF] Hosting environment: Development
+2024-01-05 15:44:49.503 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-05 15:44:52.517 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-05 15:44:52.849 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 335.0862ms
+2024-01-05 15:44:52.852 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-05 15:44:52.856 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-05 15:44:52.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.6547ms
+2024-01-05 15:44:52.909 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.9958ms
+2024-01-05 15:44:53.125 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-05 15:44:53.248 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.0174ms
+2024-01-05 15:44:58.548 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2024-01-05 15:44:58.562 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-05 15:44:58.569 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-05 15:44:58.588 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-05 15:45:00.583 +03:00 [INF] Veriler getirildi.
+2024-01-05 15:45:00.596 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-05 15:45:00.638 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 2045.8372ms
+2024-01-05 15:45:00.640 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-05 15:45:00.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 2091.5879ms
+2024-01-05 16:01:44.695 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - -
+2024-01-05 16:01:44.720 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-05 16:01:44.722 +03:00 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProduct() on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-05 16:01:44.898 +03:00 [INF] Veriler getirildi.
+2024-01-05 16:01:44.899 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-05 16:01:44.900 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProduct (Market.Api) in 177.8833ms
+2024-01-05 16:01:44.900 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProduct (Market.Api)'
+2024-01-05 16:01:44.900 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/GetProduct - - - 200 - application/json;+charset=utf-8 205.8288ms

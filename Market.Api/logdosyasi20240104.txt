@@ -1,0 +1,12 @@
+2024-01-04 16:20:44.309 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-04 16:20:44.345 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 16:20:44.346 +03:00 [INF] Hosting environment: Development
+2024-01-04 16:20:44.346 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-04 16:20:48.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-04 16:20:49.190 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1132.1892ms
+2024-01-04 16:20:49.203 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-04 16:20:49.483 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-04 16:20:49.490 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 6.7294ms
+2024-01-04 16:20:49.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 452.7146ms
+2024-01-04 16:20:49.939 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-04 16:20:50.228 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 289.3713ms

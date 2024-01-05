@@ -11,3 +11,4 @@ namespace Market.Business.Abstract
         GetProductResponse GetProductExp(GetProductRequest request, string productName);
     }
 }
+

@@ -126,9 +126,9 @@ namespace Market.Business.Concrete
                 foreach (var product in products)
                 {
                     var model = new ModelProduct();
-                    //model.Id = product.Id;
-                    //model.CategoryId = product.CategoryId;
-                    //model.Name = product.Name;
+                    model.Id = product.Id;
+                    model.CategoryId = product.CategoryId;
+                    model.Name = product.Name;
                     //model.UnitPrice = product.UnitPrice;
                     //model.Stock = product.Stok;
                     //model.Detail = product.Detail;
@@ -136,7 +136,7 @@ namespace Market.Business.Concrete
                     //model.CreatedDate = product.CreatedDate;
                     //model.ModifiedDate = product.ModifiedDate;
                     //model.DeletedDate = product.DeletedDate;
-                    model.ExpirationDate = product.ExpirationDate;
+                    model.ExpirationDate = product.ExpirationDate.HasValue? product.ExpirationDate.Value : DateTime.MinValue; 
                     productsModels.Add(model);
                 }
 

@@ -36,7 +36,7 @@ namespace Market.Entity.Concrete.Model
         [Column("deleted_date")]
         public DateTime DeletedDate { get; set; }
         [Column("ExpirationDate")] // Son kullanma
-        public DateTime? ExpirationDate { get; set; }
+        public DateTime? ExpirationDate { get; set; }//
         public virtual Category Category { get; set; }
 
     }
