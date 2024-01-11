@@ -26,5 +26,6 @@ namespace Market.Entity.DTO
 
         public DateTime DeletedDate { get; set; }
         public DateTime ExpirationDate { get; set; }
+        public int KalanGun { get; set; }
     }
 }

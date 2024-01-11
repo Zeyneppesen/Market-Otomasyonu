@@ -115,16 +115,18 @@ namespace Market.Business.Concrete
             }
         }
 
-        public GetProductResponse GetProductExp(GetProductRequest request, string productName)
+        public GetProductResponse GetProductExp(GetProductRequest request)
         {
             var response = new GetProductResponse();
             try
             {
-                var products = _productRepository.GetList(p => p.Name == productName); 
-                //var products = _productRepository.GetList(); hepsini getirir
+              //  var products = _productRepository.GetList(p => p.Name == productName); // ismi yazılan ürün verilerini getirir.
+                var products = _productRepository.GetList();// hepsini getirir
                 List<ModelProduct> productsModels = new List<ModelProduct>();
+                
                 foreach (var product in products)
                 {
+                   
                     var model = new ModelProduct();
                     model.Id = product.Id;
                     model.CategoryId = product.CategoryId;
@@ -136,7 +138,15 @@ namespace Market.Business.Concrete
                     //model.CreatedDate = product.CreatedDate;
                     //model.ModifiedDate = product.ModifiedDate;
                     //model.DeletedDate = product.DeletedDate;
-                    model.ExpirationDate = product.ExpirationDate.HasValue? product.ExpirationDate.Value : DateTime.MinValue; 
+                    model.ExpirationDate = product.ExpirationDate.HasValue? product.ExpirationDate.Value : DateTime.MinValue;
+                    //if (product.ExpirationDate.HasValue && product.ExpirationDate > DateTime.Now)
+                    //{
+                    //    // Son kullanma tarihi geçmediyse, model'e ekle
+                    //    model.ExpirationDate = product.ExpirationDate.Value;
+                    //    productsModels.Add(model);
+                    //}
+                    var kalanGun = (int)(product.ExpirationDate.Value - DateTime.Now).TotalDays;
+                    model.KalanGun = kalanGun;
                     productsModels.Add(model);
                 }
 
