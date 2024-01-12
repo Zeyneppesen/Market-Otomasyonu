@@ -1,0 +1,34 @@
+2024-01-11 13:04:02.827 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-11 13:04:02.874 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-11 13:04:02.875 +03:00 [INF] Hosting environment: Development
+2024-01-11 13:04:02.875 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-11 13:04:08.350 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-11 13:04:09.538 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1196.5010ms
+2024-01-11 13:04:09.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-11 13:04:09.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-11 13:04:09.674 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 6.7458ms
+2024-01-11 13:04:09.959 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 286.1347ms
+2024-01-11 13:04:10.108 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-11 13:04:10.150 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - -
+2024-01-11 13:04:10.192 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-11 13:04:10.193 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - - - 200 628 image/png 42.7242ms
+2024-01-11 13:04:10.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 316.8736ms
+2024-01-11 13:04:14.946 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi - -
+2024-01-11 13:04:14.957 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-11 13:04:14.966 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-11 13:04:15.028 +03:00 [INF] Route matched with {action = "GetProductExp", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProductExp(System.String) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-11 13:04:15.069 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-01-11 13:04:15.102 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProductExp (Market.Api) in 66.0413ms
+2024-01-11 13:04:15.105 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-11 13:04:15.105 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi - - - 400 - application/problem+json;+charset=utf-8 158.9515ms
+2024-01-11 13:04:21.620 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=bardak - -
+2024-01-11 13:04:21.622 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-11 13:04:21.623 +03:00 [INF] Route matched with {action = "GetProductExp", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProductExp(System.String) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-11 13:04:24.657 +03:00 [ERR] Bir hata ile karşılaştı: {ErrorMessage}Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at Market.Business.Concrete.ProductService.GetProductExp(GetProductRequest request, String productName) in C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Business\Concrete\ProductService.cs:line 148
+2024-01-11 13:04:24.716 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-11 13:04:24.748 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProductExp (Market.Api) in 3124.5954ms
+2024-01-11 13:04:24.748 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-11 13:04:24.748 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=bardak - - - 200 - application/json;+charset=utf-8 3128.2212ms

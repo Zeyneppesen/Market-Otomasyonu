@@ -1,5 +1,6 @@
 ﻿using Market.Business.Abstract;
 using Market.Entity;
+using Market.Entity.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -19,7 +20,14 @@ namespace Market.Api.Controllers
             _productService = productService;
 
         }
-    
+
+        [HttpPost]
+        [Route("AddProduct")]
+
+        public AddProductResponse AddProduct(AddProductRequest request)
+        {
+            return _productService.AddProduct(request);
+        }
 
         [HttpGet]
         [Route("GetProduct")]

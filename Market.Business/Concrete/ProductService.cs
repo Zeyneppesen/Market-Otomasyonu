@@ -1,11 +1,14 @@
 ﻿using FluentAssertions;
+using FluentValidation;
 using Market.Business.Abstract;
 using Market.Data;
 using Market.Data.Abstract;
 using Market.Entity;
 using Market.Entity.Concrete.Model;
+using Market.Entity.Concrete.Validators;
 using Market.Entity.DTO;
 using Microsoft.Extensions.Logging;
+using System.ComponentModel.DataAnnotations;
 
 namespace Market.Business.Concrete
 {
@@ -20,6 +23,41 @@ namespace Market.Business.Concrete
              _logger = logger;
         }
 
+     
+
+        public GetProductResponse AddProduct(GetProductRequest request)
+        {
+            var response = new AddProductResponse();
+            try
+            {
+                var validator = new AddProductValidator();
+                var validatorResult = validator.Validate(request);
+                var product = new Product();
+                product.Id = request.Id;
+                product.CategoryId = request.CategoryId;
+                product.Name = request.Name;
+                product.UnitPrice = request.UnitPrice;
+                product.Stok = request.Stok;
+                product.Detail = request.Detail;
+                product.Status = request.Status;
+                product.CreatedDate = request.CreateDate;
+                product.ModifiedDate = request.ModifiedDate;
+                product.DeletedDate = request.DeletedDate;
+                product.ExpirationDate = request.ExpirationDate;
+                _productRepository.Add(request);
+                response.Code = "200";
+                response.Message = "Veri Eklendi";
+                return response;
+
+
+            }
+            catch (Exception e)
+            {
+                response.Message = e + " Hatası";
+                response.Code = "400";
+                return response;
+            }
+        }
 
         public GetProductResponse GetList(GetProductRequest request)
         {
@@ -115,54 +153,58 @@ namespace Market.Business.Concrete
             }
         }
 
-        public GetProductResponse GetProductExp(GetProductRequest request)
+   
+
+        public GetProductResponse GetProductExp(GetProductRequest request, string productName)
         {
-            var response = new GetProductResponse();
-            try
             {
-              //  var products = _productRepository.GetList(p => p.Name == productName); // ismi yazılan ürün verilerini getirir.
-                var products = _productRepository.GetList();// hepsini getirir
-                List<ModelProduct> productsModels = new List<ModelProduct>();
-                
-                foreach (var product in products)
+                var response = new GetProductResponse();
+                try
                 {
-                   
-                    var model = new ModelProduct();
-                    model.Id = product.Id;
-                    model.CategoryId = product.CategoryId;
-                    model.Name = product.Name;
-                    //model.UnitPrice = product.UnitPrice;
-                    //model.Stock = product.Stok;
-                    //model.Detail = product.Detail;
-                    //model.Status = product.Status;
-                    //model.CreatedDate = product.CreatedDate;
-                    //model.ModifiedDate = product.ModifiedDate;
-                    //model.DeletedDate = product.DeletedDate;
-                    model.ExpirationDate = product.ExpirationDate.HasValue? product.ExpirationDate.Value : DateTime.MinValue;
-                    //if (product.ExpirationDate.HasValue && product.ExpirationDate > DateTime.Now)
-                    //{
-                    //    // Son kullanma tarihi geçmediyse, model'e ekle
-                    //    model.ExpirationDate = product.ExpirationDate.Value;
-                    //    productsModels.Add(model);
-                    //}
-                    var kalanGun = (int)(product.ExpirationDate.Value - DateTime.Now).TotalDays;
-                    model.KalanGun = kalanGun;
-                    productsModels.Add(model);
+                    var products = _productRepository.GetList(p => p.Name == productName); // ismi yazılan ürün verilerini getirir.
+                                                                                           //var products = _productRepository.GetList();// hepsini getirir
+                    List<ModelProduct> productsModels = new List<ModelProduct>();
+
+                    foreach (var product in products)
+                    {
+
+                        var model = new ModelProduct();
+                        model.Id = product.Id;
+                        model.CategoryId = product.CategoryId;
+                        model.Name = product.Name;
+                        //model.UnitPrice = product.UnitPrice;
+                        //model.Stock = product.Stok;
+                        //model.Detail = product.Detail;
+                        //model.Status = product.Status;
+                        //model.CreatedDate = product.CreatedDate;
+                        //model.ModifiedDate = product.ModifiedDate;
+                        //model.DeletedDate = product.DeletedDate;
+                        model.ExpirationDate = product.ExpirationDate.HasValue ? product.ExpirationDate.Value : DateTime.MinValue;
+                        //if (product.ExpirationDate.HasValue && product.ExpirationDate > DateTime.Now)
+                        //{
+                        //    // Son kullanma tarihi geçmediyse, model'e ekle
+                        //    model.ExpirationDate = product.ExpirationDate.Value;
+                        //    productsModels.Add(model);
+                        //}
+                        var kalanGun = (int)(product.ExpirationDate.Value - DateTime.Now).TotalDays;
+                        model.KalanGun = kalanGun;
+                        productsModels.Add(model);
+                    }
+
+                    response.ProductModels = productsModels;
+                    _logger.LogInformation("Veriler getirildi.");
+
+                    response.Code = "200";
+                    response.Message = "Veriler getirildi";
+                    return response;
                 }
-
-                response.ProductModels = productsModels;
-                _logger.LogInformation("Veriler getirildi.");
-
-                response.Code = "200";
-                response.Message = "Veriler getirildi";
-                return response;
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage}" + e.Message);
-                response.Errors.Add("Bir hata ile karşılaşıldı. " + e.Message);
-                response.Code = "400";
-                return response;
+                catch (Exception e)
+                {
+                    _logger.LogError(e, "Bir hata ile karşılaştı: {ErrorMessage}" + e.Message);
+                    response.Errors.Add("Bir hata ile karşılaşıldı. " + e.Message);
+                    response.Code = "400";
+                    return response;
+                }
             }
         }
     }
