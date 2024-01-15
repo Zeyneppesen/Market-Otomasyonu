@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Market.Entity.DTO
 {
-    public class AddProductResponse:BaseApiResponse
+    public class SellProductResponse:BaseApiResponse
     {
-        public List<ModelProduct> ProductModels { get; set; }
 
     }
 }

@@ -1,0 +1,331 @@
+2024-01-15 10:57:13.015 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 10:57:13.050 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 10:57:13.051 +03:00 [INF] Hosting environment: Development
+2024-01-15 10:57:13.051 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 10:57:15.997 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 10:57:17.382 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 1390.1586ms
+2024-01-15 10:57:17.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 10:57:17.444 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.0956ms
+2024-01-15 10:57:17.449 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 10:57:17.929 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 479.7007ms
+2024-01-15 10:57:18.029 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 10:57:18.374 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 344.1798ms
+2024-01-15 10:57:29.302 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=bardak - -
+2024-01-15 10:57:29.314 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-15 10:57:29.320 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-15 10:57:29.375 +03:00 [INF] Route matched with {action = "GetProductExp", controller = "Product"}. Executing controller action with signature Market.Entity.GetProductResponse GetProductExp(System.String) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 10:57:31.961 +03:00 [INF] Veriler getirildi.
+2024-01-15 10:57:31.966 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.GetProductResponse'.
+2024-01-15 10:57:31.990 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.GetProductExp (Market.Api) in 2610.9557ms
+2024-01-15 10:57:31.991 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.GetProductExp (Market.Api)'
+2024-01-15 10:57:31.991 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/api/Product/Ürünün son kullanma tarihi?productName=bardak - - - 200 - application/json;+charset=utf-8 2689.7184ms
+2024-01-15 10:58:30.255 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 10:58:30.279 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 10:58:30.279 +03:00 [INF] Hosting environment: Development
+2024-01-15 10:58:30.279 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 10:58:30.774 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 10:58:31.089 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 320.8925ms
+2024-01-15 10:58:31.099 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 10:58:31.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 10:58:31.110 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.1464ms
+2024-01-15 10:58:31.153 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.4733ms
+2024-01-15 10:58:31.246 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 10:58:31.397 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.5006ms
+2024-01-15 11:23:55.380 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 11:23:55.431 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 11:23:55.432 +03:00 [INF] Hosting environment: Development
+2024-01-15 11:23:55.432 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 11:23:57.992 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:23:58.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 318.7517ms
+2024-01-15 11:23:58.315 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:23:58.322 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:23:58.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.0628ms
+2024-01-15 11:23:58.373 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.5522ms
+2024-01-15 11:23:58.506 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:23:58.657 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.8598ms
+2024-01-15 11:34:09.646 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 11:34:09.677 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 11:34:09.678 +03:00 [INF] Hosting environment: Development
+2024-01-15 11:34:09.678 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 11:34:12.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:13.261 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 317.1265ms
+2024-01-15 11:34:13.272 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:13.276 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:13.280 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.4991ms
+2024-01-15 11:34:13.325 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7910ms
+2024-01-15 11:34:13.420 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:13.558 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.9331ms
+2024-01-15 11:34:29.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:29.201 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 11.0539ms
+2024-01-15 11:34:29.220 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:29.228 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:29.228 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.5576ms
+2024-01-15 11:34:29.253 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.1520ms
+2024-01-15 11:34:29.331 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:29.335 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7869ms
+2024-01-15 11:34:29.344 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - -
+2024-01-15 11:34:29.367 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-15 11:34:29.367 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/favicon-32x32.png - - - 200 628 image/png 23.3117ms
+2024-01-15 11:34:30.044 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:30.049 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 4.2918ms
+2024-01-15 11:34:30.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:30.064 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:30.066 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.9179ms
+2024-01-15 11:34:30.070 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.5012ms
+2024-01-15 11:34:30.198 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:30.201 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.3383ms
+2024-01-15 11:34:30.270 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:30.274 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 3.8239ms
+2024-01-15 11:34:30.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:30.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:30.295 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.2079ms
+2024-01-15 11:34:30.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.8355ms
+2024-01-15 11:34:30.391 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:30.395 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.6813ms
+2024-01-15 11:34:30.662 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:30.665 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 2.9207ms
+2024-01-15 11:34:30.686 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:30.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:30.689 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.3688ms
+2024-01-15 11:34:30.693 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.7741ms
+2024-01-15 11:34:30.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:30.799 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.7468ms
+2024-01-15 11:34:30.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:30.956 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 6.0299ms
+2024-01-15 11:34:30.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:30.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:30.977 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.3053ms
+2024-01-15 11:34:30.990 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.2173ms
+2024-01-15 11:34:31.074 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:31.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.9680ms
+2024-01-15 11:34:31.180 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:34:31.192 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 11.6458ms
+2024-01-15 11:34:31.219 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:34:31.219 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:34:31.220 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.5991ms
+2024-01-15 11:34:31.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.4764ms
+2024-01-15 11:34:31.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:34:31.324 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.8584ms
+2024-01-15 11:38:20.615 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 11:38:20.649 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 11:38:20.650 +03:00 [INF] Hosting environment: Development
+2024-01-15 11:38:20.650 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 11:38:23.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:38:23.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 519.7167ms
+2024-01-15 11:38:23.731 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:38:23.736 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:38:23.740 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.3135ms
+2024-01-15 11:38:23.785 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.7443ms
+2024-01-15 11:38:23.876 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:38:24.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.3661ms
+2024-01-15 11:39:17.227 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5002/api/Product/AddProduct application/json 309
+2024-01-15 11:39:17.243 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-15 11:39:17.248 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.AddProduct (Market.Api)'
+2024-01-15 11:39:17.286 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.AddProductResponse AddProduct(Market.Entity.DTO.AddProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 11:39:20.063 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.AddProductResponse'.
+2024-01-15 11:39:20.079 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.AddProduct (Market.Api) in 2787.4982ms
+2024-01-15 11:39:20.080 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.AddProduct (Market.Api)'
+2024-01-15 11:39:20.080 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5002/api/Product/AddProduct application/json 309 - 200 - application/json;+charset=utf-8 2853.2264ms
+2024-01-15 11:41:25.063 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 11:41:25.129 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 11:41:25.131 +03:00 [INF] Hosting environment: Development
+2024-01-15 11:41:25.131 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 11:41:25.413 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 11:41:25.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 312.6648ms
+2024-01-15 11:41:25.732 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 11:41:25.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 11:41:25.750 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 8.6767ms
+2024-01-15 11:41:25.795 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.3233ms
+2024-01-15 11:41:25.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 11:41:26.053 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.6164ms
+2024-01-15 11:41:41.527 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5002/api/Product/AddProduct application/json 312
+2024-01-15 11:41:41.543 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-15 11:41:41.548 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.AddProduct (Market.Api)'
+2024-01-15 11:41:41.600 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.AddProductResponse AddProduct(Market.Entity.DTO.AddProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 11:41:43.714 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.AddProductResponse'.
+2024-01-15 11:41:43.739 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.AddProduct (Market.Api) in 2130.8258ms
+2024-01-15 11:41:43.742 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.AddProduct (Market.Api)'
+2024-01-15 11:41:43.742 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5002/api/Product/AddProduct application/json 312 - 200 - application/json;+charset=utf-8 2214.8560ms
+2024-01-15 12:55:03.863 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 12:55:03.920 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 12:55:03.921 +03:00 [INF] Hosting environment: Development
+2024-01-15 12:55:03.921 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 12:55:07.240 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 12:55:07.559 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 319.8934ms
+2024-01-15 12:55:07.572 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 12:55:07.575 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 12:55:07.580 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.3463ms
+2024-01-15 12:55:07.637 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.1607ms
+2024-01-15 12:55:07.759 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 12:55:07.937 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.5641ms
+2024-01-15 13:11:23.189 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 13:11:23.213 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 13:11:23.214 +03:00 [INF] Hosting environment: Development
+2024-01-15 13:11:23.214 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 13:11:23.758 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 13:11:24.127 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 373.6361ms
+2024-01-15 13:11:24.140 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 13:11:24.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 13:11:24.150 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 5.2242ms
+2024-01-15 13:11:24.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.4632ms
+2024-01-15 13:11:24.291 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 13:11:24.488 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.2587ms
+2024-01-15 13:11:39.822 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 325
+2024-01-15 13:11:39.834 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-15 13:11:39.842 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 13:11:39.880 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 13:57:04.262 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 13:57:04.295 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 13:57:04.296 +03:00 [INF] Hosting environment: Development
+2024-01-15 13:57:04.296 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 13:57:06.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 13:57:07.462 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 474.9525ms
+2024-01-15 13:57:07.479 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 13:57:07.479 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 13:57:07.483 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.1387ms
+2024-01-15 13:57:07.530 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.7991ms
+2024-01-15 13:57:07.639 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 13:57:07.819 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.0831ms
+2024-01-15 13:57:17.496 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 323
+2024-01-15 13:57:17.510 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-01-15 13:57:17.516 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 13:57:17.569 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 13:57:19.979 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.SellProductResponse'.
+2024-01-15 13:57:19.995 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 2421.3632ms
+2024-01-15 13:57:19.997 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 13:57:19.997 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 323 - 200 - application/json;+charset=utf-8 2501.1939ms
+2024-01-15 13:57:57.247 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 13:57:57.254 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 7.2787ms
+2024-01-15 13:57:57.278 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 13:57:57.278 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 13:57:57.279 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.5762ms
+2024-01-15 13:57:57.300 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.7545ms
+2024-01-15 13:57:57.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 13:57:57.418 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.8770ms
+2024-01-15 13:59:44.035 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269
+2024-01-15 13:59:44.037 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 13:59:44.038 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 13:59:44.052 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-01-15 13:59:44.057 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 18.9685ms
+2024-01-15 13:59:44.057 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 13:59:44.057 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269 - 400 - application/problem+json;+charset=utf-8 23.6207ms
+2024-01-15 14:01:43.755 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269
+2024-01-15 14:01:43.782 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:01:43.782 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 14:01:43.881 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.SellProductResponse'.
+2024-01-15 14:01:43.882 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 99.0488ms
+2024-01-15 14:01:43.882 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:01:43.882 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269 - 200 - application/json;+charset=utf-8 131.4953ms
+2024-01-15 14:03:32.863 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269
+2024-01-15 14:03:32.863 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:03:32.863 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 14:03:32.894 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.SellProductResponse'.
+2024-01-15 14:03:32.895 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 31.1817ms
+2024-01-15 14:03:32.895 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:03:32.895 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269 - 200 - application/json;+charset=utf-8 33.9183ms
+2024-01-15 14:04:23.215 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269
+2024-01-15 14:04:23.216 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:04:23.220 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 14:04:23.236 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.SellProductResponse'.
+2024-01-15 14:04:23.236 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 15.7579ms
+2024-01-15 14:04:23.236 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:04:23.237 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269 - 200 - application/json;+charset=utf-8 21.1779ms
+2024-01-15 14:05:35.022 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 14:05:35.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 13.4096ms
+2024-01-15 14:05:35.057 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 14:05:35.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 14:05:35.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 0.4976ms
+2024-01-15 14:05:35.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.9204ms
+2024-01-15 14:05:35.388 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 14:05:35.395 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.0036ms
+2024-01-15 14:07:03.012 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269
+2024-01-15 14:07:03.013 +03:00 [INF] Executing endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:07:03.013 +03:00 [INF] Route matched with {action = "SellProduct", controller = "Product"}. Executing controller action with signature Market.Entity.DTO.SellProductResponse SellProduct(Market.Entity.DTO.SellProductRequest) on controller Market.Api.Controllers.ProductController (Market.Api).
+2024-01-15 14:07:03.196 +03:00 [INF] Executing ObjectResult, writing value of type 'Market.Entity.DTO.SellProductResponse'.
+2024-01-15 14:07:03.196 +03:00 [INF] Executed action Market.Api.Controllers.ProductController.SellProduct (Market.Api) in 182.9146ms
+2024-01-15 14:07:03.196 +03:00 [INF] Executed endpoint 'Market.Api.Controllers.ProductController.SellProduct (Market.Api)'
+2024-01-15 14:07:03.196 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5002/api/Product/SellProduct application/json 269 - 200 - application/json;+charset=utf-8 186.2644ms
+2024-01-15 14:48:46.047 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 14:48:46.083 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 14:48:46.084 +03:00 [INF] Hosting environment: Development
+2024-01-15 14:48:46.084 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 14:48:48.394 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 14:48:48.772 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 379.1571ms
+2024-01-15 14:48:48.796 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 14:48:48.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 14:48:48.802 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 3.6033ms
+2024-01-15 14:48:48.848 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.9915ms
+2024-01-15 14:48:49.112 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 14:48:49.285 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.9075ms
+2024-01-15 14:50:55.820 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 14:50:55.890 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 14:50:55.892 +03:00 [INF] Hosting environment: Development
+2024-01-15 14:50:55.892 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 14:50:56.412 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 14:50:56.732 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 320.4467ms
+2024-01-15 14:50:56.743 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 14:50:56.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 14:50:56.750 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.1706ms
+2024-01-15 14:50:56.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.9028ms
+2024-01-15 14:50:56.879 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 14:50:57.053 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.8698ms
+2024-01-15 14:51:41.587 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 14:51:41.632 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 14:51:41.633 +03:00 [INF] Hosting environment: Development
+2024-01-15 14:51:41.633 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 14:51:44.894 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 14:51:45.219 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 326.3689ms
+2024-01-15 14:51:45.228 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 14:51:45.231 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 14:51:45.233 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 2.4251ms
+2024-01-15 14:51:45.270 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.3397ms
+2024-01-15 14:51:45.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 14:51:45.563 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.4252ms
+2024-01-15 15:08:44.025 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 15:08:44.068 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:08:44.068 +03:00 [INF] Hosting environment: Development
+2024-01-15 15:08:44.068 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 15:08:47.199 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 15:08:47.506 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 308.0924ms
+2024-01-15 15:08:47.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 15:08:47.535 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:08:47.539 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.3898ms
+2024-01-15 15:08:47.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.7847ms
+2024-01-15 15:08:47.661 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 15:08:47.856 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.5003ms
+2024-01-15 15:20:45.552 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 15:20:45.578 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:20:45.579 +03:00 [INF] Hosting environment: Development
+2024-01-15 15:20:45.579 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 15:20:49.001 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 15:20:49.325 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 327.9891ms
+2024-01-15 15:20:49.335 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 15:20:49.343 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:20:49.347 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.0735ms
+2024-01-15 15:20:49.393 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1027ms
+2024-01-15 15:20:49.503 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 15:20:49.670 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.6310ms
+2024-01-15 15:28:59.009 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 15:28:59.056 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:28:59.057 +03:00 [INF] Hosting environment: Development
+2024-01-15 15:28:59.057 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 15:29:02.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 15:29:02.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 313.4458ms
+2024-01-15 15:29:02.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 15:29:02.765 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:29:02.769 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.0232ms
+2024-01-15 15:29:02.814 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.0463ms
+2024-01-15 15:29:02.897 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 15:29:03.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.2223ms
+2024-01-15 16:08:28.948 +03:00 [INF] Now listening on: http://localhost:5002
+2024-01-15 16:08:28.976 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 16:08:28.977 +03:00 [INF] Hosting environment: Development
+2024-01-15 16:08:28.977 +03:00 [INF] Content root path: C:\Users\source\repos\MarketOtomasyonu\MarketOtomasyonu\Market.Api
+2024-01-15 16:08:29.506 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/index.html - -
+2024-01-15 16:08:29.871 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/index.html - - - 200 - text/html;charset=utf-8 368.3978ms
+2024-01-15 16:08:29.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_vs/browserLink - -
+2024-01-15 16:08:29.890 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 16:08:29.894 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_framework/aspnetcore-browser-refresh.js - - - 200 12352 application/javascript;+charset=utf-8 4.1950ms
+2024-01-15 16:08:30.409 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 525.0370ms
+2024-01-15 16:08:30.482 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - -
+2024-01-15 16:08:30.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5002/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.9281ms

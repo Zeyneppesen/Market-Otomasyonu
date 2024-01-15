@@ -11,13 +11,14 @@ namespace Market.Entity.DTO
         public long Id { get; set; }
         public long CategoryId { get; set; }
         public string Name { get; set; }
-        public string UnitPrice { get; set; }
+        public int UnitPrice { get; set; }
         public int Stok { get; set; }
         public string Detail { get; set; }
-        public string Status { get; set; }
+        public bool Status { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime ModifiedDate { get; set; }
         public DateTime DeletedDate { get; set; }
-        public DateTime Expiration { get; set; }
+        public DateTime ExpirationDate { get; set; }
+        public int Quantity { get; set; }
     }
 }

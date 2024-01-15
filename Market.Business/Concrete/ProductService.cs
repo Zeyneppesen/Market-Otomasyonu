@@ -23,9 +23,35 @@ namespace Market.Business.Concrete
              _logger = logger;
         }
 
-     
+        public AddBasketResponse AddBasket(AddBasketRequest request)
+        {
+            var response = new AddBasketResponse();
+            try
+            {
+                var validator = new AddBasketValidator();
+               var validatorResult = validator.Validate(request);
+                var product = new Product();
+                product.Id = request.Id;
+                product.CategoryId = request.CategoryId;
+                product.Name = request.Name;
+                product.Quantity = request.Quantity;
+              
+                _productRepository.Add(product);
+                response.Code = "200";
+                response.Message = "ürün sepete eklendi Eklendi";
+                return response;
 
-        public GetProductResponse AddProduct(GetProductRequest request)
+
+            }
+            catch (Exception e)
+            {
+                response.Message = e + " Hatası";
+                response.Code = "400";
+                return response;
+            }
+        }
+
+        public AddProductResponse AddProduct(AddProductRequest request)
         {
             var response = new AddProductResponse();
             try
@@ -44,7 +70,7 @@ namespace Market.Business.Concrete
                 product.ModifiedDate = request.ModifiedDate;
                 product.DeletedDate = request.DeletedDate;
                 product.ExpirationDate = request.ExpirationDate;
-                _productRepository.Add(request);
+                _productRepository.Add(product);
                 response.Code = "200";
                 response.Message = "Veri Eklendi";
                 return response;
@@ -206,6 +232,39 @@ namespace Market.Business.Concrete
                     return response;
                 }
             }
+        }
+
+        public SellProductResponse SellProduct(SellProductRequest request)
+        {
+            var response = new SellProductResponse();
+            try
+            {
+                
+                var product = _productRepository.Get(p => p.Id == request.Id);
+                if(product!= null&&product.Stok>=request.Quantity)
+                {
+                    product.Stok-=request.Quantity;
+                    _productRepository.Delete(product);
+                    response.Code = "200";
+                    response.Message = "Satıldı";
+                    return response;
+                }
+                else
+                {
+                    response.Code = "400";
+                    response.Message = "Ürün stokta yeterli değil veya ürün bulunamadı.";
+                }
+
+
+            }
+            catch (Exception e)
+            {
+                response.Errors.Add("Bir hata ile karşılaştı."+$"{e.Message}");
+                response.Code = "400";
+                response.Message = (e + "Hatası");
+               
+            }
+            return response;
         }
     }
 

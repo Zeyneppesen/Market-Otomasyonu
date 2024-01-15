@@ -38,6 +38,7 @@ namespace Market.Entity.Concrete.Model
         [Column("ExpirationDate")] // Son kullanma
         public DateTime? ExpirationDate { get; set; }//
         public virtual Category Category { get; set; }
+        public virtual Product  Quantity { get; set; }
 
     }
 }

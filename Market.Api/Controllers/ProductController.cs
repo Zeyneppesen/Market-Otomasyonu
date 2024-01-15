@@ -20,13 +20,23 @@ namespace Market.Api.Controllers
             _productService = productService;
 
         }
-
+        [HttpPost]
+        [Route("Sepete Ekle")]
+        public AddBasketResponse AddBasket(AddBasketRequest request)
+        {
+            return _productService.AddBasket(request);
+        }
         [HttpPost]
         [Route("AddProduct")]
-
         public AddProductResponse AddProduct(AddProductRequest request)
         {
             return _productService.AddProduct(request);
+        }
+        [HttpDelete]
+        [Route("SellProduct")]
+        public SellProductResponse SellProduct(SellProductRequest request)
+        {
+            return _productService.SellProduct(request);
         }
 
         [HttpGet]
@@ -37,7 +47,8 @@ namespace Market.Api.Controllers
             return _productService.GetList(request);
         }
         [HttpGet("Id si verilen kategoriyi listele")]
-        public GetProductResponse GetProductByCategory(long categoryId)
+        public GetProductResponse GetProductByCategory(long 
+            categoryId)
         {
             GetProductRequest request = new GetProductRequest();
             return _productService.GetListByCategory(request, categoryId);
