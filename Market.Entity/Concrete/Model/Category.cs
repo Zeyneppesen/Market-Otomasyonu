@@ -18,6 +18,8 @@ namespace Market.Entity.Concrete.Model
         [Column("Description")]
         public string Description { get; set;}
         public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+   //     public virtual ICollection<Product> Categorys { get; set; } = new List<Product>();
+
 
     }
 }

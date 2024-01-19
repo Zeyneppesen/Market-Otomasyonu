@@ -9,6 +9,7 @@ using Market.Entity.Concrete.Validators;
 using Market.Entity.DTO;
 using Microsoft.Extensions.Logging;
 using System.ComponentModel.DataAnnotations;
+using FluentValidation;
 
 namespace Market.Business.Concrete
 {
@@ -29,16 +30,18 @@ namespace Market.Business.Concrete
             try
             {
                 var validator = new AddBasketValidator();
-               var validatorResult = validator.Validate(request);
+                var validatorResult = validator.Validate(request);
                 var product = new Product();
                 product.Id = request.Id;
                 product.CategoryId = request.CategoryId;
-                product.Name = request.Name;
+
+                string name = request.Name;
+                product.Name = name;
                 product.Quantity = request.Quantity;
               
                 _productRepository.Add(product);
                 response.Code = "200";
-                response.Message = "ürün sepete eklendi Eklendi";
+                response.Message = "ürün sepete eklendi ";
                 return response;
 
 
@@ -138,7 +141,7 @@ namespace Market.Business.Concrete
                 return response;
             }
         }
-        public GetProductResponse GetListByCategory(GetProductRequest request, long categoryId)
+        public GetProductResponse GetCategory(GetProductRequest request, long categoryId)
         {
             var response = new GetProductResponse();
             try

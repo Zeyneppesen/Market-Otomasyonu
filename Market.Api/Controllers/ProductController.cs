@@ -21,7 +21,7 @@ namespace Market.Api.Controllers
 
         }
         [HttpPost]
-        [Route("Sepete Ekle")]
+        [Route("AddBasket")]
         public AddBasketResponse AddBasket(AddBasketRequest request)
         {
             return _productService.AddBasket(request);
@@ -51,7 +51,7 @@ namespace Market.Api.Controllers
             categoryId)
         {
             GetProductRequest request = new GetProductRequest();
-            return _productService.GetListByCategory(request, categoryId);
+            return _productService.GetCategory(request, categoryId);
         }
         [HttpGet("Ürünün son kullanma tarihi")]
         public GetProductResponse GetProductExp(string productName)

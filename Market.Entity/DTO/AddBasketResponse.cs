@@ -8,7 +8,7 @@ namespace Market.Entity.DTO
 {
     public class AddBasketResponse:BaseApiResponse
     {
-        //  public List<ModelProduct> ProductModels { get; set; }
+         //public List<ModelProduct> ProductModels { get; set; }
         public long Id { get; set; }
         public long CategoryId { get; set; }
         public string Name { get; set; }

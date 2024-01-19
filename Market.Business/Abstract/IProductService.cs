@@ -7,7 +7,7 @@ namespace Market.Business.Abstract
     public interface IProductService
     {
         GetProductResponse GetList(GetProductRequest request);
-        GetProductResponse GetListByCategory(GetProductRequest request, long categoryId);
+        GetProductResponse GetCategory(GetProductRequest request, long categoryId);
         GetProductResponse GetProductExp(GetProductRequest request, string productName);
    
         AddProductResponse AddProduct(AddProductRequest request);
