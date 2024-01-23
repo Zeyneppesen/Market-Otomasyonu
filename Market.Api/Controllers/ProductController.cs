@@ -19,12 +19,13 @@ namespace Market.Api.Controllers
             _logger = logger;
             _productService = productService;
 
+
         }
         [HttpPost]
-        [Route("AddBasket")]
-        public AddBasketResponse AddBasket(AddBasketRequest request)
+        [Route("AddCart")]
+        public AddCartResponse AddCart(AddCartRequest request)
         {
-            return _productService.AddBasket(request);
+            return _productService.AddCart(request);
         }
         [HttpPost]
         [Route("AddProduct")]

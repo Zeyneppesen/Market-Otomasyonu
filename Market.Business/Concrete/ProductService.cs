@@ -24,59 +24,48 @@ namespace Market.Business.Concrete
              _logger = logger;
         }
 
-        public AddBasketResponse AddBasket(AddBasketRequest request)
-        {
-            var response = new AddBasketResponse();
-            try
-            {
-                var validator = new AddBasketValidator();
-                var validatorResult = validator.Validate(request);
-                var product = new Product();
-                product.Id = request.Id;
-                product.CategoryId = request.CategoryId;
-
-                string name = request.Name;
-                product.Name = name;
-                product.Quantity = request.Quantity;
-              
-                _productRepository.Add(product);
-                response.Code = "200";
-                response.Message = "ürün sepete eklendi ";
-                return response;
-
-
-            }
-            catch (Exception e)
-            {
-                response.Message = e + " Hatası";
-                response.Code = "400";
-                return response;
-            }
-        }
-
+        
         public AddProductResponse AddProduct(AddProductRequest request)
         {
             var response = new AddProductResponse();
+            var existingProduct = _productRepository.Get(p => p.Name == request.Name);
+
             try
             {
-                var validator = new AddProductValidator();
-                var validatorResult = validator.Validate(request);
-                var product = new Product();
-                product.Id = request.Id;
-                product.CategoryId = request.CategoryId;
-                product.Name = request.Name;
-                product.UnitPrice = request.UnitPrice;
-                product.Stok = request.Stok;
-                product.Detail = request.Detail;
-                product.Status = request.Status;
-                product.CreatedDate = request.CreateDate;
-                product.ModifiedDate = request.ModifiedDate;
-                product.DeletedDate = request.DeletedDate;
-                product.ExpirationDate = request.ExpirationDate;
-                _productRepository.Add(product);
-                response.Code = "200";
-                response.Message = "Veri Eklendi";
-                return response;
+
+                if (existingProduct != null)
+                {
+                    existingProduct.Quantity = request.Quantity;
+                    _productRepository.Update(existingProduct);
+                    existingProduct.Quantity = request.Quantity;
+                    response.Code = "200";
+                    response.Message = "Veri Güncellendi";
+
+                }
+
+                else
+                {
+                    
+
+                    var validator = new AddProductValidator();
+                    var validatorResult = validator.Validate(request);
+                    var product = new Product();
+                    product.Id = request.Id;
+                    product.CategoryId = request.CategoryId;
+                    product.Name = request.Name;
+                    product.UnitPrice = request.UnitPrice;
+                    product.Stok = request.Stok;
+                    product.Detail = request.Detail;
+                    product.Status = request.Status;
+                    product.CreatedDate = request.CreateDate;
+                    product.ModifiedDate = request.ModifiedDate;
+                    product.DeletedDate = request.DeletedDate;
+                    product.ExpirationDate = request.ExpirationDate;
+                    _productRepository.Add(product);
+                    response.Code = "200";
+                    response.Message = "Veri Eklendi";
+                    return response;
+                }
 
 
             }
@@ -268,6 +257,36 @@ namespace Market.Business.Concrete
                
             }
             return response;
+        }
+
+        public AddCartResponse AddCart(AddCartRequest request)
+        {
+            var response = new AddCartResponse();
+            try
+            {
+                var validator = new AddCartValidator();
+                var validatorResult = validator.Validate(request);
+                var product = new Product();
+                product.Id = request.Id;
+                product.CategoryId = request.CategoryId;
+
+                string name = request.Name;
+                product.Name = name;
+                product.Quantity = request.Quantity;
+
+                _productRepository.Add(product);
+                response.Code = "200";
+                response.Message = "ürün sepete eklendi ";
+                return response;
+
+
+            }
+            catch (Exception e)
+            {
+                response.Message = e + " Hatası";
+                response.Code = "400";
+                return response;
+            }
         }
     }
 

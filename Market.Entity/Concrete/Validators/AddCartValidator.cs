@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Market.Entity.Concrete.Validators
 {
-    public class AddBasketValidator:AbstractValidator<AddBasketRequest>
+    public class AddCartValidator:AbstractValidator<AddCartRequest>
     {
     }
 }

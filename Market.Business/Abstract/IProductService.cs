@@ -12,7 +12,7 @@ namespace Market.Business.Abstract
    
         AddProductResponse AddProduct(AddProductRequest request);
         SellProductResponse SellProduct(SellProductRequest request);
-        AddBasketResponse AddBasket(AddBasketRequest request);
+        AddCartResponse AddCart(AddCartRequest request);
     }
 }
 

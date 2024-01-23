@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Market.Entity.DTO
 {
-   public class AddBasketRequest:BaseApiRequest
+   public class AddCartRequest:BaseApiRequest
     {
         public long Id { get; set; }
         public long CategoryId { get; set; }
