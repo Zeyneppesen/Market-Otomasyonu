@@ -27,6 +27,13 @@ namespace Market.Api.Controllers
         {
             return _productService.AddCart(request);
         }
+
+        //[HttpPost]
+        //[Route("AddCart")]
+        //public AddProductResponse AddCart(AddProductRequest request)
+        //{
+        //    return _productService.AddCart(request);
+        //}
         [HttpPost]
         [Route("AddProduct")]
         public AddProductResponse AddProduct(AddProductRequest request)

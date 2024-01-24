@@ -35,11 +35,12 @@ namespace Market.Business.Concrete
 
                 if (existingProduct != null)
                 {
-                    existingProduct.Quantity = request.Quantity;
+                    existingProduct.Stok+= request.Quantity;
                     _productRepository.Update(existingProduct);
-                    existingProduct.Quantity = request.Quantity;
+                    existingProduct.Quantity = request.Stok;
                     response.Code = "200";
                     response.Message = "Veri Güncellendi";
+                    return response;
 
                 }
 
@@ -259,6 +260,11 @@ namespace Market.Business.Concrete
             return response;
         }
 
+      
+         
+            
+        
+
         public AddCartResponse AddCart(AddCartRequest request)
         {
             var response = new AddCartResponse();
@@ -268,10 +274,9 @@ namespace Market.Business.Concrete
                 var validatorResult = validator.Validate(request);
                 var product = new Product();
                 product.Id = request.Id;
-                product.CategoryId = request.CategoryId;
+                product.Id = request.ProductId;
 
-                string name = request.Name;
-                product.Name = name;
+                product.Name = request.Name;
                 product.Quantity = request.Quantity;
 
                 _productRepository.Add(product);
@@ -288,6 +293,7 @@ namespace Market.Business.Concrete
                 return response;
             }
         }
+
     }
 
       
