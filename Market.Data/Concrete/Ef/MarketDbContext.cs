@@ -16,6 +16,7 @@ namespace Market.Data.Concrete.Ef
         }
 
         public DbSet<Product> Products { get; set; } 
+        public DbSet<Sepet> Sepets { get; set; }
    
     }
 }

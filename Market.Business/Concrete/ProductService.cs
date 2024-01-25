@@ -265,21 +265,22 @@ namespace Market.Business.Concrete
             
         
 
-        public AddCartResponse AddCart(AddCartRequest request)
+        public AddCartResponse AddCart(AddCartRequest request) //bu kod; ürünleri sepet tablosuna değil de Product tablosuna ekliyor
         {
             var response = new AddCartResponse();
             try
             {
                 var validator = new AddCartValidator();
                 var validatorResult = validator.Validate(request);
-                var product = new Product();
-                product.Id = request.Id;
-                product.Id = request.ProductId;
+                
+                var cart = new Sepet();
+             //   product.Id = request.Id;
+                cart.Id = request.ProductId;
 
-                product.Name = request.Name;
-                product.Quantity = request.Quantity;
+                cart.Name = request.Name;
+                cart.Quantity = request.Quantity;
 
-                _productRepository.Add(product);
+                _productRepository.Add(cart);
                 response.Code = "200";
                 response.Message = "ürün sepete eklendi ";
                 return response;
@@ -289,6 +290,7 @@ namespace Market.Business.Concrete
             catch (Exception e)
             {
                 response.Message = e + " Hatası";
+                //response.Message = e.ToString() + "Hatası";
                 response.Code = "400";
                 return response;
             }

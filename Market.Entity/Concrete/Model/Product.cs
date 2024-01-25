@@ -40,6 +40,7 @@ namespace Market.Entity.Concrete.Model
         [Column("Quantity")]
         public int Quantity { get; set; }
         public virtual Category Category { get; set; }
+        public virtual Sepet Sepet { get; set; }
       
 
     }
